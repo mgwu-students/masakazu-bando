@@ -1,21 +1,19 @@
 ## Game Design
 ### Objective
-[explain the goal of the game]
+Action game, side view, kill enemies, collect bodies/skills
 
 ### Gameplay Mechanics
-[detail the game mechanics, do not include anything about theme/artwork]
+Touch to move, buttons to do attacks
 
 ### Level Design
-[describe what a typical level or puzzle would look like]
-
+gigantic map, random spwan spots for enemies
 
 ## Technical
 ### Scenes
-* [list the different scenes/screens used in the game]
+Menu->Location select->game map->control settings
 
 ### Controls/Input
-[describe the control scheme used in the game]
-
+touch to move, buttons for items/moves
 ### Classes/CCBs
 * Scenes
   * [list SpriteBuilder scenes used]
