@@ -52,7 +52,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<true/>
+			<false/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -74,40 +74,32 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>21.371124267578125</real>
+					<real>1.4492340087890625</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>112</real>
+					<real>23.496124267578125</real>
+					<real>61.210952758789062</real>
 				</array>
 				<array>
-					<real>137</real>
-					<real>112</real>
-				</array>
-				<array>
-					<real>137</real>
-					<real>0.0</real>
+					<real>21.066436767578125</real>
+					<real>1.5429840087890625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>137</real>
-						<real>0.0</real>
+						<real>21.066436767578125</real>
+						<real>1.5429840087890625</real>
 					</array>
 					<array>
-						<real>137</real>
-						<real>112</real>
+						<real>21.371124267578125</real>
+						<real>1.4492340087890625</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>112</real>
-					</array>
-					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>23.496124267578125</real>
+						<real>61.210952758789062</real>
 					</array>
 				</array>
 			</array>
@@ -168,7 +160,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/Dog.png</string>
+					<string>ccbResources/character_various-monsters_a8a9c2746ec464eba399aeed1390daa028631b45@4x.png</string>
 				</array>
 			</dict>
 			<dict>

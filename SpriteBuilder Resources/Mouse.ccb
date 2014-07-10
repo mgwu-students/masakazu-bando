@@ -52,7 +52,7 @@
 			<key>affectedByGravity</key>
 			<true/>
 			<key>allowsRotation</key>
-			<true/>
+			<false/>
 			<key>bodyShape</key>
 			<integer>0</integer>
 			<key>collisionCategories</key>
@@ -74,40 +74,32 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>23.222686767578125</real>
+					<real>48.316421508789062</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>236</real>
+					<real>22.222686767578125</real>
+					<real>49.316421508789062</real>
 				</array>
 				<array>
-					<real>211</real>
-					<real>236</real>
-				</array>
-				<array>
-					<real>211</real>
-					<real>0.0</real>
+					<real>22.609405517578125</real>
+					<real>0.7226715087890625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>211</real>
-						<real>0.0</real>
+						<real>22.222686767578125</real>
+						<real>49.316421508789062</real>
 					</array>
 					<array>
-						<real>211</real>
-						<real>236</real>
+						<real>22.609405517578125</real>
+						<real>0.7226715087890625</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>236</real>
-					</array>
-					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>23.222686767578125</real>
+						<real>48.316421508789062</real>
 					</array>
 				</array>
 			</array>

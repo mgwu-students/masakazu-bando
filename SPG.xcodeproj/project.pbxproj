@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6207EC2C196DF2CB00124536 /* CCActionFollow+CurrentOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 6207EC2B196DF2CB00124536 /* CCActionFollow+CurrentOffset.m */; };
 		6218C7AC19661E3400B58F4E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6218C7AB19661E3400B58F4E /* Dog.m */; };
 		6218C7B2196B1AEF00B58F4E /* Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6218C7B1196B1AEF00B58F4E /* Mouse.m */; };
 		622812001965F7F2008EEB5F /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 622811FF1965F7F2008EEB5F /* Creature.m */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6207EC2A196DF2CB00124536 /* CCActionFollow+CurrentOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CCActionFollow+CurrentOffset.h"; path = "Source/CCActionFollow+CurrentOffset.h"; sourceTree = "<group>"; };
+		6207EC2B196DF2CB00124536 /* CCActionFollow+CurrentOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CCActionFollow+CurrentOffset.m"; path = "Source/CCActionFollow+CurrentOffset.m"; sourceTree = "<group>"; };
 		6218C7AA19661E3400B58F4E /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = Source/Dog.h; sourceTree = "<group>"; };
 		6218C7AB19661E3400B58F4E /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = Source/Dog.m; sourceTree = "<group>"; };
 		6218C7B0196B1AEF00B58F4E /* Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mouse.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				622811FF1965F7F2008EEB5F /* Creature.m */,
 				622812021965FDB2008EEB5F /* Cat.h */,
 				622812031965FDB2008EEB5F /* Cat.m */,
+				6207EC2A196DF2CB00124536 /* CCActionFollow+CurrentOffset.h */,
+				6207EC2B196DF2CB00124536 /* CCActionFollow+CurrentOffset.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				622812001965F7F2008EEB5F /* Creature.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				6207EC2C196DF2CB00124536 /* CCActionFollow+CurrentOffset.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				622812041965FDB2008EEB5F /* Cat.m in Sources */,
 			);

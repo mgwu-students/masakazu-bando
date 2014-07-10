@@ -162,6 +162,16 @@
 			<key>tabletScale</key>
 			<integer>1</integer>
 		</dict>
+		<key>ccbResources/character_various-monsters_87143cf5a7ca2db177fda6187bc707650c1f6ffb@4x.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>ccbResources/character_various-monsters_a8a9c2746ec464eba399aeed1390daa028631b45@4x.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>versionStr</key>
 	<string>Version: 1.1.0

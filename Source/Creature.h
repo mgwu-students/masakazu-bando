@@ -9,5 +9,5 @@
 #import "CCSprite.h"
 
 @interface Creature : CCSprite
-    @property NSString* ccbDirectory;
+    @property(nonatomic,strong) NSString* ccbDirectory;
 @end
