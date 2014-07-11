@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -24,9 +24,9 @@
 	<key>fileVersion</key>
 	<integer>4</integer>
 	<key>gridspaceHeight</key>
-	<integer>36</integer>
+	<integer>64</integer>
 	<key>gridspaceWidth</key>
-	<integer>35</integer>
+	<integer>64</integer>
 	<key>guides</key>
 	<array/>
 	<key>joints</key>
@@ -40,90 +40,13 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Mouse</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
 		<string></string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
-		<key>physicsBody</key>
-		<dict>
-			<key>affectedByGravity</key>
-			<true/>
-			<key>allowsRotation</key>
-			<false/>
-			<key>bodyShape</key>
-			<integer>0</integer>
-			<key>collisionCategories</key>
-			<array/>
-			<key>collisionMask</key>
-			<array/>
-			<key>collisionType</key>
-			<string></string>
-			<key>cornerRadius</key>
-			<real>0.0</real>
-			<key>density</key>
-			<real>1</real>
-			<key>dynamic</key>
-			<true/>
-			<key>elasticity</key>
-			<real>0.30000001192092896</real>
-			<key>friction</key>
-			<real>0.30000001192092896</real>
-			<key>points</key>
-			<array>
-				<array>
-					<real>10.437530517578125</real>
-					<real>-0.5663909912109375</real>
-				</array>
-				<array>
-					<real>9.312530517578125</real>
-					<real>0.5625152587890625</real>
-				</array>
-				<array>
-					<real>20.925811767578125</real>
-					<real>-0.2812347412109375</real>
-				</array>
-				<array>
-					<real>22.925811767578125</real>
-					<real>41.238296508789062</real>
-				</array>
-				<array>
-					<real>20.789093017578125</real>
-					<real>-0.8906097412109375</real>
-				</array>
-				<array>
-					<real>34.851593017578125</real>
-					<real>-0.4374847412109375</real>
-				</array>
-			</array>
-			<key>polygons</key>
-			<array>
-				<array>
-					<array>
-						<real>9.312530517578125</real>
-						<real>0.5625152587890625</real>
-					</array>
-					<array>
-						<real>10.437530517578125</real>
-						<real>-0.5663909912109375</real>
-					</array>
-					<array>
-						<real>20.789093017578125</real>
-						<real>-0.8906097412109375</real>
-					</array>
-					<array>
-						<real>34.851593017578125</real>
-						<real>-0.4374847412109375</real>
-					</array>
-					<array>
-						<real>22.925811767578125</real>
-						<real>41.238296508789062</real>
-					</array>
-				</array>
-			</array>
-		</dict>
 		<key>properties</key>
 		<array>
 			<dict>
@@ -180,7 +103,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/Transformice___Mouse_by_Ludolik.png</string>
+					<string></string>
 				</array>
 			</dict>
 			<dict>
@@ -197,8 +120,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

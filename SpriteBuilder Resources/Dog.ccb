@@ -64,7 +64,7 @@
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
-			<real>1</real>
+			<real>0.69999998807907104</real>
 			<key>dynamic</key>
 			<true/>
 			<key>elasticity</key>
@@ -74,32 +74,56 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>21.371124267578125</real>
-					<real>1.4492340087890625</real>
+					<real>42.343780517578125</real>
+					<real>2.7929840087890625</real>
 				</array>
 				<array>
-					<real>23.496124267578125</real>
-					<real>61.210952758789062</real>
+					<real>41.429718017578125</real>
+					<real>2.7929840087890625</real>
 				</array>
 				<array>
-					<real>21.066436767578125</real>
-					<real>1.5429840087890625</real>
+					<real>24.832061767578125</real>
+					<real>1.6328277587890625</real>
+				</array>
+				<array>
+					<real>23.746124267578125</real>
+					<real>58.953140258789062</real>
+				</array>
+				<array>
+					<real>25.566436767578125</real>
+					<real>1.5507965087890625</real>
+				</array>
+				<array>
+					<real>5.742218017578125</real>
+					<real>1.4023590087890625</real>
+				</array>
+				<array>
+					<real>6.523468017578125</real>
+					<real>0.7500152587890625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>21.066436767578125</real>
-						<real>1.5429840087890625</real>
+						<real>5.742218017578125</real>
+						<real>1.4023590087890625</real>
 					</array>
 					<array>
-						<real>21.371124267578125</real>
-						<real>1.4492340087890625</real>
+						<real>6.523468017578125</real>
+						<real>0.7500152587890625</real>
 					</array>
 					<array>
-						<real>23.496124267578125</real>
-						<real>61.210952758789062</real>
+						<real>25.566436767578125</real>
+						<real>1.5507965087890625</real>
+					</array>
+					<array>
+						<real>42.343780517578125</real>
+						<real>2.7929840087890625</real>
+					</array>
+					<array>
+						<real>23.746124267578125</real>
+						<real>58.953140258789062</real>
 					</array>
 				</array>
 			</array>

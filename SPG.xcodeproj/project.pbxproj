@@ -12,6 +12,8 @@
 		6218C7B2196B1AEF00B58F4E /* Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6218C7B1196B1AEF00B58F4E /* Mouse.m */; };
 		622812001965F7F2008EEB5F /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 622811FF1965F7F2008EEB5F /* Creature.m */; };
 		622812041965FDB2008EEB5F /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 622812031965FDB2008EEB5F /* Cat.m */; };
+		62E42CCF19706AC60009817F /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E42CCE19706AC60009817F /* Intro.m */; };
+		62E42CD719708CFE0009817F /* DeadBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E42CD619708CFE0009817F /* DeadBody.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -71,6 +73,10 @@
 		622811FF1965F7F2008EEB5F /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Creature.m; path = Source/Creature.m; sourceTree = "<group>"; };
 		622812021965FDB2008EEB5F /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cat.h; path = Source/Cat.h; sourceTree = "<group>"; };
 		622812031965FDB2008EEB5F /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cat.m; path = Source/Cat.m; sourceTree = "<group>"; };
+		62E42CCD19706AC60009817F /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Intro.h; path = Source/Intro.h; sourceTree = "<group>"; };
+		62E42CCE19706AC60009817F /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Intro.m; path = Source/Intro.m; sourceTree = "<group>"; };
+		62E42CD519708CFE0009817F /* DeadBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeadBody.h; path = Source/DeadBody.h; sourceTree = "<group>"; };
+		62E42CD619708CFE0009817F /* DeadBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeadBody.m; path = Source/DeadBody.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -144,6 +150,10 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				62E42CD519708CFE0009817F /* DeadBody.h */,
+				62E42CD619708CFE0009817F /* DeadBody.m */,
+				62E42CCD19706AC60009817F /* Intro.h */,
+				62E42CCE19706AC60009817F /* Intro.m */,
 				6218C7B0196B1AEF00B58F4E /* Mouse.h */,
 				6218C7B1196B1AEF00B58F4E /* Mouse.m */,
 				6218C7AA19661E3400B58F4E /* Dog.h */,
@@ -368,9 +378,11 @@
 				6218C7AC19661E3400B58F4E /* Dog.m in Sources */,
 				6218C7B2196B1AEF00B58F4E /* Mouse.m in Sources */,
 				622812001965F7F2008EEB5F /* Creature.m in Sources */,
+				62E42CCF19706AC60009817F /* Intro.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				6207EC2C196DF2CB00124536 /* CCActionFollow+CurrentOffset.m in Sources */,
+				62E42CD719708CFE0009817F /* DeadBody.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				622812041965FDB2008EEB5F /* Cat.m in Sources */,
 			);
