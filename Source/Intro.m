@@ -10,7 +10,13 @@
 
 @implementation Intro
 - (void)Start {
-    CCScene *gameplayScene = [CCBReader loadAsScene:@"MainScene"];
+   
+    CCScene *gameplayScene = [CCBReader loadAsScene:@"DataSelect"];
     [[CCDirector sharedDirector] replaceScene:gameplayScene];
 }
+- (void)Test {
+    CCScene *gameplayScene = [CCBReader loadAsScene:@"ScrollTest"];
+    [[CCDirector sharedDirector] replaceScene:gameplayScene];
+}
+
 @end

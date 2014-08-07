@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 Apportable. All rights reserved.
 //
 
-#import "CCNode.h"
+#import "CCScene.h"
 
-@interface MainScene : CCNode <CCPhysicsCollisionDelegate>
+@interface MainScene : CCScene <CCPhysicsCollisionDelegate>
+@property(nonatomic,assign) int numOfSpawnNodes;
 
+@property(nonatomic,weak) NSString* levelName;
+-(BOOL)playerMoved;
 @end

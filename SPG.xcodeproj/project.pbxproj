@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		6207EC2C196DF2CB00124536 /* CCActionFollow+CurrentOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 6207EC2B196DF2CB00124536 /* CCActionFollow+CurrentOffset.m */; };
-		6218C7AC19661E3400B58F4E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6218C7AB19661E3400B58F4E /* Dog.m */; };
-		6218C7B2196B1AEF00B58F4E /* Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6218C7B1196B1AEF00B58F4E /* Mouse.m */; };
 		622812001965F7F2008EEB5F /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 622811FF1965F7F2008EEB5F /* Creature.m */; };
-		622812041965FDB2008EEB5F /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 622812031965FDB2008EEB5F /* Cat.m */; };
+		622E28EB198BD4B600F5C128 /* MoveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 622E28EA198BD4B600F5C128 /* MoveButton.m */; };
+		6232F03E1971EC0C00B62F58 /* SwipeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232F03D1971EC0C00B62F58 /* SwipeSet.m */; };
+		62B0BD38197D8373005ED9DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62B0BD37197D8373005ED9DE /* README.md */; };
+		62B0BD3C197DA0D3005ED9DE /* CreatureQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD3B197DA0D3005ED9DE /* CreatureQueue.m */; };
+		62B0BD41197EA81F005ED9DE /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD40197EA81F005ED9DE /* GameOver.m */; };
+		62B0BD44197F0EF4005ED9DE /* CreatureNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD43197F0EF4005ED9DE /* CreatureNode.m */; };
+		62B0BD4F198127A4005ED9DE /* ButtonSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD4E198127A4005ED9DE /* ButtonSet.m */; };
+		62B0BD5219812968005ED9DE /* ButtonOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD5119812968005ED9DE /* ButtonOptions.m */; };
+		62B0BD5519812BE8005ED9DE /* PauseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD5419812BE8005ED9DE /* PauseMenu.m */; };
+		62B4D0DD198570A8007790EB /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B4D0DC198570A8007790EB /* MyScrollView.m */; };
+		62BC5D211989703C001A25D5 /* PopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BC5D201989703C001A25D5 /* PopUp.m */; };
+		62BC5D25198AC6A7001A25D5 /* GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BC5D24198AC6A7001A25D5 /* GameData.m */; };
+		62BEFCF21978936700B9FFE1 /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BEFCF11978936700B9FFE1 /* Attack.m */; };
+		62C1EDAA19911A8B002C3600 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1EDA919911A8B002C3600 /* Tutorial.m */; };
+		62C1EDAD1992894B002C3600 /* LevelUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1EDAC1992894B002C3600 /* LevelUp.m */; };
 		62E42CCF19706AC60009817F /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E42CCE19706AC60009817F /* Intro.m */; };
 		62E42CD719708CFE0009817F /* DeadBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E42CD619708CFE0009817F /* DeadBody.m */; };
+		62E42CDE1971489E0009817F /* DataSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E42CDD1971489E0009817F /* DataSelect.m */; };
+		62E42CE2197148AD0009817F /* LocationSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E42CE1197148AD0009817F /* LocationSelect.m */; };
+		62E42CE419714B9E0009817F /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62E42CE319714B9E0009817F /* Property List.plist */; };
+		62F3E981197160BB0036F514 /* MoveNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F3E980197160BB0036F514 /* MoveNode.m */; };
+		62F3E98C19716BB90036F514 /* MoveConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F3E98B19716BB90036F514 /* MoveConfiguration.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -65,18 +82,50 @@
 /* Begin PBXFileReference section */
 		6207EC2A196DF2CB00124536 /* CCActionFollow+CurrentOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CCActionFollow+CurrentOffset.h"; path = "Source/CCActionFollow+CurrentOffset.h"; sourceTree = "<group>"; };
 		6207EC2B196DF2CB00124536 /* CCActionFollow+CurrentOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CCActionFollow+CurrentOffset.m"; path = "Source/CCActionFollow+CurrentOffset.m"; sourceTree = "<group>"; };
-		6218C7AA19661E3400B58F4E /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dog.h; path = Source/Dog.h; sourceTree = "<group>"; };
-		6218C7AB19661E3400B58F4E /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dog.m; path = Source/Dog.m; sourceTree = "<group>"; };
-		6218C7B0196B1AEF00B58F4E /* Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mouse.h; sourceTree = "<group>"; };
-		6218C7B1196B1AEF00B58F4E /* Mouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mouse.m; sourceTree = "<group>"; };
 		622811FE1965F7F2008EEB5F /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creature.h; path = Source/Creature.h; sourceTree = "<group>"; };
 		622811FF1965F7F2008EEB5F /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Creature.m; path = Source/Creature.m; sourceTree = "<group>"; };
-		622812021965FDB2008EEB5F /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cat.h; path = Source/Cat.h; sourceTree = "<group>"; };
-		622812031965FDB2008EEB5F /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cat.m; path = Source/Cat.m; sourceTree = "<group>"; };
+		622E28E9198BD4B600F5C128 /* MoveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveButton.h; path = Source/MoveButton.h; sourceTree = "<group>"; };
+		622E28EA198BD4B600F5C128 /* MoveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveButton.m; path = Source/MoveButton.m; sourceTree = "<group>"; };
+		6232F03C1971EC0C00B62F58 /* SwipeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeSet.h; path = Source/SwipeSet.h; sourceTree = "<group>"; };
+		6232F03D1971EC0C00B62F58 /* SwipeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeSet.m; path = Source/SwipeSet.m; sourceTree = "<group>"; };
+		62B0BD37197D8373005ED9DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		62B0BD3A197DA0D3005ED9DE /* CreatureQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatureQueue.h; path = Source/CreatureQueue.h; sourceTree = "<group>"; };
+		62B0BD3B197DA0D3005ED9DE /* CreatureQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureQueue.m; path = Source/CreatureQueue.m; sourceTree = "<group>"; };
+		62B0BD3F197EA81F005ED9DE /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOver.h; path = Source/GameOver.h; sourceTree = "<group>"; };
+		62B0BD40197EA81F005ED9DE /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOver.m; path = Source/GameOver.m; sourceTree = "<group>"; };
+		62B0BD42197F0EF4005ED9DE /* CreatureNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatureNode.h; path = Source/CreatureNode.h; sourceTree = "<group>"; };
+		62B0BD43197F0EF4005ED9DE /* CreatureNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureNode.m; path = Source/CreatureNode.m; sourceTree = "<group>"; };
+		62B0BD4D198127A4005ED9DE /* ButtonSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonSet.h; path = Source/ButtonSet.h; sourceTree = "<group>"; };
+		62B0BD4E198127A4005ED9DE /* ButtonSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonSet.m; path = Source/ButtonSet.m; sourceTree = "<group>"; };
+		62B0BD5019812968005ED9DE /* ButtonOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonOptions.h; path = Source/ButtonOptions.h; sourceTree = "<group>"; };
+		62B0BD5119812968005ED9DE /* ButtonOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonOptions.m; path = Source/ButtonOptions.m; sourceTree = "<group>"; };
+		62B0BD5319812BE8005ED9DE /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseMenu.h; path = Source/PauseMenu.h; sourceTree = "<group>"; };
+		62B0BD5419812BE8005ED9DE /* PauseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseMenu.m; path = Source/PauseMenu.m; sourceTree = "<group>"; };
+		62B4D0DB198570A8007790EB /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		62B4D0DC198570A8007790EB /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
+		62BC5D1F1989703C001A25D5 /* PopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUp.h; sourceTree = "<group>"; };
+		62BC5D201989703C001A25D5 /* PopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUp.m; sourceTree = "<group>"; };
+		62BC5D23198AC6A7001A25D5 /* GameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameData.h; path = Source/GameData.h; sourceTree = "<group>"; };
+		62BC5D24198AC6A7001A25D5 /* GameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameData.m; path = Source/GameData.m; sourceTree = "<group>"; };
+		62BEFCF01978936700B9FFE1 /* Attack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		62BEFCF11978936700B9FFE1 /* Attack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		62C1EDA819911A8B002C3600 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tutorial.h; path = Source/Tutorial.h; sourceTree = "<group>"; };
+		62C1EDA919911A8B002C3600 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tutorial.m; path = Source/Tutorial.m; sourceTree = "<group>"; };
+		62C1EDAB1992894B002C3600 /* LevelUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelUp.h; path = Source/LevelUp.h; sourceTree = "<group>"; };
+		62C1EDAC1992894B002C3600 /* LevelUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelUp.m; path = Source/LevelUp.m; sourceTree = "<group>"; };
 		62E42CCD19706AC60009817F /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Intro.h; path = Source/Intro.h; sourceTree = "<group>"; };
 		62E42CCE19706AC60009817F /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Intro.m; path = Source/Intro.m; sourceTree = "<group>"; };
 		62E42CD519708CFE0009817F /* DeadBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeadBody.h; path = Source/DeadBody.h; sourceTree = "<group>"; };
 		62E42CD619708CFE0009817F /* DeadBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeadBody.m; path = Source/DeadBody.m; sourceTree = "<group>"; };
+		62E42CDC1971489E0009817F /* DataSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSelect.h; path = Source/DataSelect.h; sourceTree = "<group>"; };
+		62E42CDD1971489E0009817F /* DataSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataSelect.m; path = Source/DataSelect.m; sourceTree = "<group>"; };
+		62E42CE0197148AD0009817F /* LocationSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSelect.h; sourceTree = "<group>"; };
+		62E42CE1197148AD0009817F /* LocationSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSelect.m; sourceTree = "<group>"; };
+		62E42CE319714B9E0009817F /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		62F3E97F197160BB0036F514 /* MoveNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveNode.h; path = Source/MoveNode.h; sourceTree = "<group>"; };
+		62F3E980197160BB0036F514 /* MoveNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveNode.m; path = Source/MoveNode.m; sourceTree = "<group>"; };
+		62F3E98A19716BB90036F514 /* MoveConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveConfiguration.h; path = Source/MoveConfiguration.h; sourceTree = "<group>"; };
+		62F3E98B19716BB90036F514 /* MoveConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveConfiguration.m; path = Source/MoveConfiguration.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -148,20 +197,51 @@
 			children = (
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				62E42CE0197148AD0009817F /* LocationSelect.h */,
+				62E42CE1197148AD0009817F /* LocationSelect.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				62C1EDA819911A8B002C3600 /* Tutorial.h */,
+				62C1EDA919911A8B002C3600 /* Tutorial.m */,
+				62BC5D23198AC6A7001A25D5 /* GameData.h */,
+				62BC5D24198AC6A7001A25D5 /* GameData.m */,
+				62B0BD5319812BE8005ED9DE /* PauseMenu.h */,
+				62B0BD5419812BE8005ED9DE /* PauseMenu.m */,
+				6232F03C1971EC0C00B62F58 /* SwipeSet.h */,
+				6232F03D1971EC0C00B62F58 /* SwipeSet.m */,
+				62B0BD42197F0EF4005ED9DE /* CreatureNode.h */,
+				62B0BD43197F0EF4005ED9DE /* CreatureNode.m */,
+				62B0BD3A197DA0D3005ED9DE /* CreatureQueue.h */,
+				62B0BD3B197DA0D3005ED9DE /* CreatureQueue.m */,
+				62B0BD37197D8373005ED9DE /* README.md */,
+				62BEFCF01978936700B9FFE1 /* Attack.h */,
+				62BEFCF11978936700B9FFE1 /* Attack.m */,
+				62B0BD4D198127A4005ED9DE /* ButtonSet.h */,
+				62B0BD4E198127A4005ED9DE /* ButtonSet.m */,
+				62B0BD5019812968005ED9DE /* ButtonOptions.h */,
+				62B0BD5119812968005ED9DE /* ButtonOptions.m */,
+				62BC5D1F1989703C001A25D5 /* PopUp.h */,
+				62BC5D201989703C001A25D5 /* PopUp.m */,
+				62C1EDAB1992894B002C3600 /* LevelUp.h */,
+				62C1EDAC1992894B002C3600 /* LevelUp.m */,
+				62B4D0DB198570A8007790EB /* MyScrollView.h */,
+				62B4D0DC198570A8007790EB /* MyScrollView.m */,
+				622E28E9198BD4B600F5C128 /* MoveButton.h */,
+				622E28EA198BD4B600F5C128 /* MoveButton.m */,
+				62F3E98A19716BB90036F514 /* MoveConfiguration.h */,
+				62F3E98B19716BB90036F514 /* MoveConfiguration.m */,
+				62E42CDC1971489E0009817F /* DataSelect.h */,
+				62E42CDD1971489E0009817F /* DataSelect.m */,
 				62E42CD519708CFE0009817F /* DeadBody.h */,
 				62E42CD619708CFE0009817F /* DeadBody.m */,
+				62B0BD3F197EA81F005ED9DE /* GameOver.h */,
+				62B0BD40197EA81F005ED9DE /* GameOver.m */,
 				62E42CCD19706AC60009817F /* Intro.h */,
 				62E42CCE19706AC60009817F /* Intro.m */,
-				6218C7B0196B1AEF00B58F4E /* Mouse.h */,
-				6218C7B1196B1AEF00B58F4E /* Mouse.m */,
-				6218C7AA19661E3400B58F4E /* Dog.h */,
-				6218C7AB19661E3400B58F4E /* Dog.m */,
+				62F3E97F197160BB0036F514 /* MoveNode.h */,
+				62F3E980197160BB0036F514 /* MoveNode.m */,
 				622811FE1965F7F2008EEB5F /* Creature.h */,
 				622811FF1965F7F2008EEB5F /* Creature.m */,
-				622812021965FDB2008EEB5F /* Cat.h */,
-				622812031965FDB2008EEB5F /* Cat.m */,
 				6207EC2A196DF2CB00124536 /* CCActionFollow+CurrentOffset.h */,
 				6207EC2B196DF2CB00124536 /* CCActionFollow+CurrentOffset.m */,
 			);
@@ -240,6 +320,7 @@
 			children = (
 				B73789911807667A0076A88C /* Icons */,
 				B737893A180761570076A88C /* Published-iOS */,
+				62E42CE319714B9E0009817F /* Property List.plist */,
 			);
 			name = Resources;
 			path = Source/Resources;
@@ -344,9 +425,11 @@
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
+				62B0BD38197D8373005ED9DE /* README.md in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				62E42CE419714B9E0009817F /* Property List.plist in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,16 +458,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6218C7AC19661E3400B58F4E /* Dog.m in Sources */,
-				6218C7B2196B1AEF00B58F4E /* Mouse.m in Sources */,
+				62F3E981197160BB0036F514 /* MoveNode.m in Sources */,
+				62E42CE2197148AD0009817F /* LocationSelect.m in Sources */,
+				62B0BD41197EA81F005ED9DE /* GameOver.m in Sources */,
 				622812001965F7F2008EEB5F /* Creature.m in Sources */,
 				62E42CCF19706AC60009817F /* Intro.m in Sources */,
+				622E28EB198BD4B600F5C128 /* MoveButton.m in Sources */,
+				62B0BD44197F0EF4005ED9DE /* CreatureNode.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				62BC5D211989703C001A25D5 /* PopUp.m in Sources */,
+				62B0BD3C197DA0D3005ED9DE /* CreatureQueue.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				62B0BD4F198127A4005ED9DE /* ButtonSet.m in Sources */,
 				6207EC2C196DF2CB00124536 /* CCActionFollow+CurrentOffset.m in Sources */,
+				6232F03E1971EC0C00B62F58 /* SwipeSet.m in Sources */,
+				62B0BD5519812BE8005ED9DE /* PauseMenu.m in Sources */,
+				62B4D0DD198570A8007790EB /* MyScrollView.m in Sources */,
 				62E42CD719708CFE0009817F /* DeadBody.m in Sources */,
+				62C1EDAA19911A8B002C3600 /* Tutorial.m in Sources */,
+				62BEFCF21978936700B9FFE1 /* Attack.m in Sources */,
+				62BC5D25198AC6A7001A25D5 /* GameData.m in Sources */,
+				62F3E98C19716BB90036F514 /* MoveConfiguration.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-				622812041965FDB2008EEB5F /* Cat.m in Sources */,
+				62E42CDE1971489E0009817F /* DataSelect.m in Sources */,
+				62C1EDAD1992894B002C3600 /* LevelUp.m in Sources */,
+				62B0BD5219812968005ED9DE /* ButtonOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +566,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = SPG;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "098B0293-C31E-46A6-BA31-372DCC7A8CEA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -500,7 +598,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = SPG;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "098B0293-C31E-46A6-BA31-372DCC7A8CEA";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

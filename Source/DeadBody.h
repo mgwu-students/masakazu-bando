@@ -9,6 +9,7 @@
 #import "CCSprite.h"
 
 @interface DeadBody : CCSprite
-@property(nonatomic,strong) NSString* ccbDirectory;
+    @property(nonatomic,strong) NSString* ccbDirectory;
+@property(nonatomic,assign) int spawnNodeNum;
 @end
 
