@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>filenames</key>
-	<dict/>
+	<dict>
+		<key>orbs/orbs.psd</key>
+		<string>orbs/orbs.png</string>
+	</dict>
 	<key>metadata</key>
 	<dict>
 		<key>version</key>

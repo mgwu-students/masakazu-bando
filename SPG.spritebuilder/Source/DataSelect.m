@@ -61,7 +61,7 @@ GameData* data;
     
      data= [GameData sharedData];
     
-    NSArray* allMyAttacks = [NSArray arrayWithObjects:@"Fire",@"BodySwap",@"Bomb",@"Barrier",@"RockSlide", nil];
+    NSArray* allMyAttacks = [NSArray arrayWithObjects:@"Fire",@"BodySwap",@"Bomb",@"Barrier",@"RockSlide",@"Punch", nil];
     
     data.myMoves =   data.myMoves = [[MoveNode alloc] init];
     data.unlockedAttacks = [NSMutableArray array];
@@ -98,13 +98,25 @@ GameData* data;
     
     [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"Coins"];
     [[NSUserDefaults standardUserDefaults] setObject:@"Ghost" forKey:@"CreatureType"];
-    [[NSUserDefaults standardUserDefaults] setObject:@"rr" forKey:@"Fire"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"CurrentProgressAttack"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"rr" forKey:@"Punch"];
     [[NSUserDefaults standardUserDefaults] setObject:@"dd" forKey:@"BodySwap"];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Fire"];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Bomb"];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"RockSlide"];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Barrier"];
     
+    
+    
+    
+    
     NSArray* allLocations = [NSArray arrayWithObjects:@"LocationForest", @"LocationSky", @"LocationSea", @"LocationFactory", @"LocationMountain", nil];
+    
+    NSArray* allCreatures = [NSArray arrayWithObjects:@"Spider",@"Wolf",@"Golemn",@"Mage",@"Goblin", nil];
+    for(int i = 0;i< allCreatures.count;i++)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[allLocations objectAtIndex:i] ];
+    }
     
     for(int i = 0;i< allLocations.count;i++)
     {

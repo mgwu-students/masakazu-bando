@@ -24,6 +24,14 @@
     self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
     
 }
+-(void)Punch
+{
+    
+    self.myAttack = @"Punch";
+    
+    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
+    
+}
 -(void)BodySwap
 {
     self.myAttack = @"BodySwap";
@@ -101,6 +109,10 @@
         else if([[data.unlockedAttacks objectAtIndex:i] isEqualToString:@"Barrier"])
         {
             [((CCButton*)(myButton.children[0])) setTarget:self selector:@selector(Barrier)];
+        }
+        else if([[data.unlockedAttacks objectAtIndex:i] isEqualToString:@"Punch"])
+        {
+            [((CCButton*)(myButton.children[0])) setTarget:self selector:@selector(Punch)];
         }
         
         

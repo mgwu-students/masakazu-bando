@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
+            "asset": "../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
             "target": "ResourceRules.plist"
         }, 
         {
@@ -214,6 +214,11 @@
                     "prefix": "Source/", 
                     "suffix": "Intro.h"
                 }, 
+                "LevelUp.h": {
+                    "key": "LevelUp.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LevelUp.h"
+                }, 
                 "LocationSelect.h": {
                     "key": "LocationSelect.h", 
                     "prefix": "./", 
@@ -263,12 +268,17 @@
                     "key": "SwipeSet.h", 
                     "prefix": "Source/", 
                     "suffix": "SwipeSet.h"
+                }, 
+                "Tutorial.h": {
+                    "key": "Tutorial.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Tutorial.h"
                 }
             }, 
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmpUEtawB/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmphFaBFv/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -336,11 +346,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmpUEtawB/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmphFaBFv/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmpUEtawB/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmphFaBFv/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -486,6 +496,13 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "Source/LevelUp.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "Source/MainScene.m"
         }, 
         {
@@ -522,6 +539,13 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "Source/SwipeSet.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial.m"
         }, 
         {
             "defines": {}, 

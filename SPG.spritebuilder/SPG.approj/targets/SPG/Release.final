@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
+            "asset": "../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist", 
             "target": "ResourceRules.plist"
         }, 
         {
@@ -29,8 +29,16 @@
             "target": "iPhone-old@2x.png"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/Aura.ccbi", 
+            "target": "Published-iOS/Aura.ccbi"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/BackGround.ccbi", 
             "target": "Published-iOS/BackGround.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Bahamut.ccbi", 
+            "target": "Published-iOS/Bahamut.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/Barrier.ccbi", 
@@ -39,18 +47,6 @@
         {
             "asset": "Source/Resources/Published-iOS/Bat.ccbi", 
             "target": "Published-iOS/Bat.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Bat2.ccbi", 
-            "target": "Published-iOS/Bat2.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Batt.ccbi", 
-            "target": "Published-iOS/Batt.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Blank.ccbi", 
-            "target": "Published-iOS/Blank.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/BlockFire.ccbi", 
@@ -71,10 +67,6 @@
         {
             "asset": "Source/Resources/Published-iOS/ButtonOptions.ccbi", 
             "target": "Published-iOS/ButtonOptions.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Cat.ccbi", 
-            "target": "Published-iOS/Cat.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/CloudBlock.ccbi", 
@@ -101,24 +93,12 @@
             "target": "Published-iOS/DeadBody.ccbi"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Dog.ccbi", 
-            "target": "Published-iOS/Dog.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Dummy.ccbi", 
-            "target": "Published-iOS/Dummy.ccbi"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/fileLookup.plist", 
             "target": "Published-iOS/fileLookup.plist"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/FireBall.ccbi", 
             "target": "Published-iOS/FireBall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/FireBlock.ccbi", 
-            "target": "Published-iOS/FireBlock.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/Forest.ccbi", 
@@ -129,8 +109,16 @@
             "target": "Published-iOS/GameOver.ccbi"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/GamePlay.ccbi", 
+            "target": "Published-iOS/GamePlay.ccbi"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/Gem.ccbi", 
             "target": "Published-iOS/Gem.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Ghost.ccbi", 
+            "target": "Published-iOS/Ghost.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/Goblin.ccbi", 
@@ -161,8 +149,8 @@
             "target": "Published-iOS/Intro.ccbi"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Level1.ccbi", 
-            "target": "Published-iOS/Level1.ccbi"
+            "asset": "Source/Resources/Published-iOS/LevelUp.ccbi", 
+            "target": "Published-iOS/LevelUp.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/LineH.ccbi", 
@@ -213,12 +201,12 @@
             "target": "Published-iOS/Mountain.ccbi"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Mouse.ccbi", 
-            "target": "Published-iOS/Mouse.ccbi"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/MyButton.ccbi", 
             "target": "Published-iOS/MyButton.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/NewMove.ccbi", 
+            "target": "Published-iOS/NewMove.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/PauseMenu.ccbi", 
@@ -233,6 +221,14 @@
             "target": "Published-iOS/PopUp.ccbi"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/PopUp2.ccbi", 
+            "target": "Published-iOS/PopUp2.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/Punch.ccbi", 
+            "target": "Published-iOS/Punch.ccbi"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/RockSlide.ccbi", 
             "target": "Published-iOS/RockSlide.ccbi"
         }, 
@@ -243,10 +239,6 @@
         {
             "asset": "Source/Resources/Published-iOS/Shit.ccbi", 
             "target": "Published-iOS/Shit.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Soul.ccbi", 
-            "target": "Published-iOS/Soul.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/Spider.ccbi", 
@@ -269,8 +261,16 @@
             "target": "Published-iOS/SwipeSet.ccbi"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/Swoop.ccbi", 
+            "target": "Published-iOS/Swoop.ccbi"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/Tutorial.ccbi", 
             "target": "Published-iOS/Tutorial.ccbi"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/TutorialBackground.ccbi", 
+            "target": "Published-iOS/TutorialBackground.ccbi"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/TutorialObject.ccbi", 
@@ -545,6 +545,262 @@
             "target": "Published-iOS/32x32-bat-sprite [www.imagesplitter.net]/resources-tablethd/32x32-bat-sprite [www.imagesplitter.net]-3-3.png"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-0-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-1-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-2-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phone/bahamut [www.imagesplitter.net]-3-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-0-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-1-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-2-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-phonehd/bahamut [www.imagesplitter.net]-3-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-0-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-1-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-2-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablet/bahamut [www.imagesplitter.net]-3-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-0-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-1-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-2-3.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-0.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-0.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-1.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-1.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-2.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-2.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-3.png", 
+            "target": "Published-iOS/bahamut [www.imagesplitter.net]/resources-tablethd/bahamut [www.imagesplitter.net]-3-3.png"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/Bomb/resources-phone/bomb explosion-10@4x.png", 
             "target": "Published-iOS/Bomb/resources-phone/bomb explosion-10@4x.png"
         }, 
@@ -753,360 +1009,8 @@
             "target": "Published-iOS/Bomb/resources-tablethd/bomb explosion-9@4x.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/CCB/Barrier.ccbi", 
-            "target": "Published-iOS/CCB/Barrier.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Blank.ccbi", 
-            "target": "Published-iOS/CCB/Blank.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/BlockFire.ccbi", 
-            "target": "Published-iOS/CCB/BlockFire.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/BodySwap.ccbi", 
-            "target": "Published-iOS/CCB/BodySwap.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Bomb.ccbi", 
-            "target": "Published-iOS/CCB/Bomb.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/ButtonMenu.ccbi", 
-            "target": "Published-iOS/CCB/ButtonMenu.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/ButtonOptions.ccbi", 
-            "target": "Published-iOS/CCB/ButtonOptions.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Cat.ccbi", 
-            "target": "Published-iOS/CCB/Cat.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/CloudBlock.ccbi", 
-            "target": "Published-iOS/CCB/CloudBlock.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Coin.ccbi", 
-            "target": "Published-iOS/CCB/Coin.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/DarkMonster.ccbi", 
-            "target": "Published-iOS/CCB/DarkMonster.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/DataSelect.ccbi", 
-            "target": "Published-iOS/CCB/DataSelect.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/DeadBody.ccbi", 
-            "target": "Published-iOS/CCB/DeadBody.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Dog.ccbi", 
-            "target": "Published-iOS/CCB/Dog.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/FireBall.ccbi", 
-            "target": "Published-iOS/CCB/FireBall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/FireBlock.ccbi", 
-            "target": "Published-iOS/CCB/FireBlock.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/GameOver.ccbi", 
-            "target": "Published-iOS/CCB/GameOver.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Gem.ccbi", 
-            "target": "Published-iOS/CCB/Gem.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Goblin.ccbi", 
-            "target": "Published-iOS/CCB/Goblin.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Golemn.ccbi", 
-            "target": "Published-iOS/CCB/Golemn.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/GroundCorner.ccbi", 
-            "target": "Published-iOS/CCB/GroundCorner.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/GroundLeftSide.ccbi", 
-            "target": "Published-iOS/CCB/GroundLeftSide.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/GroundWall.ccbi", 
-            "target": "Published-iOS/CCB/GroundWall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/HealthPotion.ccbi", 
-            "target": "Published-iOS/CCB/HealthPotion.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Intro.ccbi", 
-            "target": "Published-iOS/CCB/Intro.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/LineH.ccbi", 
-            "target": "Published-iOS/CCB/LineH.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/LineV.ccbi", 
-            "target": "Published-iOS/CCB/LineV.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/LocationSelect.ccbi", 
-            "target": "Published-iOS/CCB/LocationSelect.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Mage.ccbi", 
-            "target": "Published-iOS/CCB/Mage.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/MainScene.ccbi", 
-            "target": "Published-iOS/CCB/MainScene.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Mouse.ccbi", 
-            "target": "Published-iOS/CCB/Mouse.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/PauseMenu.ccbi", 
-            "target": "Published-iOS/CCB/PauseMenu.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Pointer.ccbi", 
-            "target": "Published-iOS/CCB/Pointer.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/PopUp.ccbi", 
-            "target": "Published-iOS/CCB/PopUp.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/RockSlide.ccbi", 
-            "target": "Published-iOS/CCB/RockSlide.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/ScrollTest.ccbi", 
-            "target": "Published-iOS/CCB/ScrollTest.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Spider.ccbi", 
-            "target": "Published-iOS/CCB/Spider.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Star.ccbi", 
-            "target": "Published-iOS/CCB/Star.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/SwipeSet.ccbi", 
-            "target": "Published-iOS/CCB/SwipeSet.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Tutorial.ccbi", 
-            "target": "Published-iOS/CCB/Tutorial.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/TutorialObject.ccbi", 
-            "target": "Published-iOS/CCB/TutorialObject.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Untitled.ccbi", 
-            "target": "Published-iOS/CCB/Untitled.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Wizard.ccbi", 
-            "target": "Published-iOS/CCB/Wizard.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Wolf.ccbi", 
-            "target": "Published-iOS/CCB/Wolf.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Attacks/Barrier.ccbi", 
-            "target": "Published-iOS/CCB/Attacks/Barrier.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Attacks/BodySwap.ccbi", 
-            "target": "Published-iOS/CCB/Attacks/BodySwap.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Attacks/Bomb.ccbi", 
-            "target": "Published-iOS/CCB/Attacks/Bomb.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Attacks/CloudBlock.ccbi", 
-            "target": "Published-iOS/CCB/Attacks/CloudBlock.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Attacks/FireBall.ccbi", 
-            "target": "Published-iOS/CCB/Attacks/FireBall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Attacks/RockSlide.ccbi", 
-            "target": "Published-iOS/CCB/Attacks/RockSlide.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Bat.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Bat.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Bat1.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Bat1.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/DarkMonster.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/DarkMonster.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Goblin.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Goblin.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Golemn.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Golemn.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Mage.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Mage.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Shit.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Shit.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Spider.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Spider.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Wizard.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Wizard.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Creatures/Wolf.ccbi", 
-            "target": "Published-iOS/CCB/Creatures/Wolf.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Locations/Forest.ccbi", 
-            "target": "Published-iOS/CCB/Locations/Forest.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Locations/Maze.ccbi", 
-            "target": "Published-iOS/CCB/Locations/Maze.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Locations/Mountain.ccbi", 
-            "target": "Published-iOS/CCB/Locations/Mountain.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/ButtonMenu.ccbi", 
-            "target": "Published-iOS/CCB/Misc/ButtonMenu.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/ButtonOptions.ccbi", 
-            "target": "Published-iOS/CCB/Misc/ButtonOptions.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Coin.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Coin.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/DataSelect.ccbi", 
-            "target": "Published-iOS/CCB/Misc/DataSelect.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/DeadBody.ccbi", 
-            "target": "Published-iOS/CCB/Misc/DeadBody.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/GameOver.ccbi", 
-            "target": "Published-iOS/CCB/Misc/GameOver.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Gem.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Gem.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/GroundCorner.ccbi", 
-            "target": "Published-iOS/CCB/Misc/GroundCorner.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/GroundLeftSide.ccbi", 
-            "target": "Published-iOS/CCB/Misc/GroundLeftSide.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/GroundWall.ccbi", 
-            "target": "Published-iOS/CCB/Misc/GroundWall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/HealthPotion.ccbi", 
-            "target": "Published-iOS/CCB/Misc/HealthPotion.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Intro.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Intro.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/LineH.ccbi", 
-            "target": "Published-iOS/CCB/Misc/LineH.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/LineV.ccbi", 
-            "target": "Published-iOS/CCB/Misc/LineV.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/LocationSelect.ccbi", 
-            "target": "Published-iOS/CCB/Misc/LocationSelect.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/MainScene.ccbi", 
-            "target": "Published-iOS/CCB/Misc/MainScene.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/PauseMenu.ccbi", 
-            "target": "Published-iOS/CCB/Misc/PauseMenu.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Pointer.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Pointer.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/PopUp.ccbi", 
-            "target": "Published-iOS/CCB/Misc/PopUp.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/ScrollTest.ccbi", 
-            "target": "Published-iOS/CCB/Misc/ScrollTest.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Star.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Star.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/SwipeSet.ccbi", 
-            "target": "Published-iOS/CCB/Misc/SwipeSet.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Tutorial.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Tutorial.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/TutorialObject.ccbi", 
-            "target": "Published-iOS/CCB/Misc/TutorialObject.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Misc/Untitled.ccbi", 
-            "target": "Published-iOS/CCB/Misc/Untitled.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/CCB/Obstacles/BlockFire.ccbi", 
-            "target": "Published-iOS/CCB/Obstacles/BlockFire.ccbi"
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/125.png", 
+            "target": "Published-iOS/ccbResources/resources-phone/125.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/1385417117717.png", 
@@ -1161,10 +1065,6 @@
             "target": "Published-iOS/ccbResources/resources-phone/ccbSliderBgHighlighted.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/ccbResources/resources-phone/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/ccbSliderHandle.png", 
             "target": "Published-iOS/ccbResources/resources-phone/ccbSliderHandle.png"
         }, 
@@ -1197,10 +1097,6 @@
             "target": "Published-iOS/ccbResources/resources-phone/object_puzzle-shapes_57950245520789d5324e674d8bdd8a8064c6e001@4x.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
-            "target": "Published-iOS/ccbResources/resources-phone/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png", 
             "target": "Published-iOS/ccbResources/resources-phone/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png"
         }, 
@@ -1209,8 +1105,8 @@
             "target": "Published-iOS/ccbResources/resources-phone/Transformice___Mouse_by_Ludolik.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phone/yco4XadcE.png", 
-            "target": "Published-iOS/ccbResources/resources-phone/yco4XadcE.png"
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/125.png", 
+            "target": "Published-iOS/ccbResources/resources-phonehd/125.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/1385417117717.png", 
@@ -1265,10 +1161,6 @@
             "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderBgHighlighted.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/ccbSliderHandle.png", 
             "target": "Published-iOS/ccbResources/resources-phonehd/ccbSliderHandle.png"
         }, 
@@ -1301,10 +1193,6 @@
             "target": "Published-iOS/ccbResources/resources-phonehd/object_puzzle-shapes_57950245520789d5324e674d8bdd8a8064c6e001@4x.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
-            "target": "Published-iOS/ccbResources/resources-phonehd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png", 
             "target": "Published-iOS/ccbResources/resources-phonehd/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png"
         }, 
@@ -1313,8 +1201,8 @@
             "target": "Published-iOS/ccbResources/resources-phonehd/Transformice___Mouse_by_Ludolik.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-phonehd/yco4XadcE.png", 
-            "target": "Published-iOS/ccbResources/resources-phonehd/yco4XadcE.png"
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/125.png", 
+            "target": "Published-iOS/ccbResources/resources-tablet/125.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/1385417117717.png", 
@@ -1369,10 +1257,6 @@
             "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderBgHighlighted.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/ccbSliderHandle.png", 
             "target": "Published-iOS/ccbResources/resources-tablet/ccbSliderHandle.png"
         }, 
@@ -1405,10 +1289,6 @@
             "target": "Published-iOS/ccbResources/resources-tablet/object_puzzle-shapes_57950245520789d5324e674d8bdd8a8064c6e001@4x.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
-            "target": "Published-iOS/ccbResources/resources-tablet/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png", 
             "target": "Published-iOS/ccbResources/resources-tablet/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png"
         }, 
@@ -1417,8 +1297,8 @@
             "target": "Published-iOS/ccbResources/resources-tablet/Transformice___Mouse_by_Ludolik.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablet/yco4XadcE.png", 
-            "target": "Published-iOS/ccbResources/resources-tablet/yco4XadcE.png"
+            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/125.png", 
+            "target": "Published-iOS/ccbResources/resources-tablethd/125.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/1385417117717.png", 
@@ -1473,10 +1353,6 @@
             "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderBgHighlighted.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/ccbSliderHandle.png", 
             "target": "Published-iOS/ccbResources/resources-tablethd/ccbSliderHandle.png"
         }, 
@@ -1509,20 +1385,12 @@
             "target": "Published-iOS/ccbResources/resources-tablethd/object_puzzle-shapes_57950245520789d5324e674d8bdd8a8064c6e001@4x.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
-            "target": "Published-iOS/ccbResources/resources-tablethd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png", 
             "target": "Published-iOS/ccbResources/resources-tablethd/set_monkey-platformer_2b02336a65e8d47a372fec0aede359155fe92c00@4x.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/Transformice___Mouse_by_Ludolik.png", 
             "target": "Published-iOS/ccbResources/resources-tablethd/Transformice___Mouse_by_Ludolik.png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/ccbResources/resources-tablethd/yco4XadcE.png", 
-            "target": "Published-iOS/ccbResources/resources-tablethd/yco4XadcE.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/Coin/resources-phone/spinning $ coin-1@4x.png", 
@@ -2101,712 +1969,228 @@
             "target": "Published-iOS/darksoldiersheetupdate_0 [www.imagesplitter.net]/resources-tablethd/darksoldiersheetupdate_0 [www.imagesplitter.net]-3-5.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-0-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phone/sky (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/ghost_2 [www.imagesplitter.net]-1-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-phonehd/sky (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phone/right4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-0-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablet/sky (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/ghost_2 [www.imagesplitter.net]-1-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest/resources-tablethd/sky (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-phonehd/right4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/bg_3 (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/bg_3 (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-0-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phone/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/bg_3 (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/bg_3 (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/ghost_2 [www.imagesplitter.net]-1-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-phonehd/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablet/right4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/bg_3 (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/bg_3 (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-0-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-0.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-0.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablet/mtn (z -4).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/bg_1 (z -1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/bg_2 (z -2).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/bg_3 (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/bg_3 (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/ghost_2 [www.imagesplitter.net]-1-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/Gradient (z -6).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right1.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right1.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/middleground (z 0).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right2.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right2.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/middleplus (z 1).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right3.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right3.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/mtn (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/Forest2/resources-tablethd/mtn (z -4).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GDOF15642S031VN treetop_03-trees at sunset/resources-phone/bg1 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GDOF15642S031VN treetop_03-trees at sunset/resources-phone/bg1 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/fg (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/fg (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/sky (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/sky (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/T_1305054546660 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phone/T_1305054546660 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/fg (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/fg (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/sky (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/sky (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/T_1305054546660 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-phonehd/T_1305054546660 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/fg (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/fg (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/sky (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/sky (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/T_1305054546660 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablet/T_1305054546660 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/fg (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/fg (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/sky (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/sky (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/T_1305054546660 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV15C8IEQ322UG Firabiz Flaunts-vertical climbing rock/resources-tablethd/T_1305054546660 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/BG1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/BG1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/BG2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/BG2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/Sky (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/Sky (z -4).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/Skyplus (z -5).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phone/Skyplus (z -5).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/BG1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/BG1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/BG2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/BG2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/Sky (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/Sky (z -4).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/Skyplus (z -5).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-phonehd/Skyplus (z -5).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/BG1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/BG1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/BG2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/BG2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/Sky (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/Sky (z -4).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/Skyplus (z -5).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablet/Skyplus (z -5).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/BG1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/BG1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/BG2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/BG2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/Sky (z -4).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/Sky (z -4).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/Skyplus (z -5).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV2547JP9B2AG0 Baddam Haddam-double arch rocks 1038 elements/resources-tablethd/Skyplus (z -5).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phone/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-phonehd/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablet/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GHV51JE5JC42VP2 Arisi Amble-cavern dark color sat/resources-tablethd/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phone/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-phonehd/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablet/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/foreground (z 2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/foreground (z 2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GLICFILAMTI11QV Scribe's Weald-Narrow forest/resources-tablethd/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phone/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-phonehd/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablet/sky (z -3).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/bg_1 (z -1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/bg_1 (z -1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/bg_2 (z -2).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/bg_2 (z -2).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/Gradient (z -6).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/Gradient (z -6).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/middleground (z 0).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/middleground (z 0).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/middleplus (z 1).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/middleplus (z 1).png"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/sky (z -3).png", 
-            "target": "Published-iOS/Glitch parallex BG sampler/GUVDU3H5COS2S4O  Fasena Preserve - Pretty smaller trees/resources-tablethd/sky (z -3).png"
+            "asset": "Source/Resources/Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right4.png", 
+            "target": "Published-iOS/ghost_2 [www.imagesplitter.net]/resources-tablethd/right4.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/Goblin/resources-phone/goblin_0 [www.imagesplitter.net]-1-0.png", 
@@ -3885,16 +3269,16 @@
             "target": "Published-iOS/resources-phone/Buttonunhighlighted [www.imagesplitter.net].png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/resources-phone/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/resources-phone/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/resources-phone/element_blue_rectangle@4x.png", 
             "target": "Published-iOS/resources-phone/element_blue_rectangle@4x.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-phone/element_green_rectangle@4x.png", 
             "target": "Published-iOS/resources-phone/element_green_rectangle@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/fist.png", 
+            "target": "Published-iOS/resources-phone/fist.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-phone/Gem-Yellow@4x.png", 
@@ -3941,8 +3325,16 @@
             "target": "Published-iOS/resources-phone/Potions_01_128x256_023@4x.png"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/resources-phone/rpgTile224@4x.png", 
+            "target": "Published-iOS/resources-phone/rpgTile224@4x.png"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/resources-phone/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
             "target": "Published-iOS/resources-phone/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phone/spr_button_pictogram_18.png", 
+            "target": "Published-iOS/resources-phone/spr_button_pictogram_18.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-phone/window_4.png", 
@@ -3969,16 +3361,16 @@
             "target": "Published-iOS/resources-phonehd/Buttonunhighlighted [www.imagesplitter.net].png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/resources-phonehd/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/resources-phonehd/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/resources-phonehd/element_blue_rectangle@4x.png", 
             "target": "Published-iOS/resources-phonehd/element_blue_rectangle@4x.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-phonehd/element_green_rectangle@4x.png", 
             "target": "Published-iOS/resources-phonehd/element_green_rectangle@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/fist.png", 
+            "target": "Published-iOS/resources-phonehd/fist.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-phonehd/Gem-Yellow@4x.png", 
@@ -4025,8 +3417,16 @@
             "target": "Published-iOS/resources-phonehd/Potions_01_128x256_023@4x.png"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/rpgTile224@4x.png", 
+            "target": "Published-iOS/resources-phonehd/rpgTile224@4x.png"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/resources-phonehd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
             "target": "Published-iOS/resources-phonehd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-phonehd/spr_button_pictogram_18.png", 
+            "target": "Published-iOS/resources-phonehd/spr_button_pictogram_18.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-phonehd/window_4.png", 
@@ -4053,16 +3453,16 @@
             "target": "Published-iOS/resources-tablet/Buttonunhighlighted [www.imagesplitter.net].png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/resources-tablet/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/resources-tablet/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/resources-tablet/element_blue_rectangle@4x.png", 
             "target": "Published-iOS/resources-tablet/element_blue_rectangle@4x.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-tablet/element_green_rectangle@4x.png", 
             "target": "Published-iOS/resources-tablet/element_green_rectangle@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/fist.png", 
+            "target": "Published-iOS/resources-tablet/fist.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-tablet/Gem-Yellow@4x.png", 
@@ -4109,8 +3509,16 @@
             "target": "Published-iOS/resources-tablet/Potions_01_128x256_023@4x.png"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/rpgTile224@4x.png", 
+            "target": "Published-iOS/resources-tablet/rpgTile224@4x.png"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/resources-tablet/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
             "target": "Published-iOS/resources-tablet/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablet/spr_button_pictogram_18.png", 
+            "target": "Published-iOS/resources-tablet/spr_button_pictogram_18.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-tablet/window_4.png", 
@@ -4137,16 +3545,16 @@
             "target": "Published-iOS/resources-tablethd/Buttonunhighlighted [www.imagesplitter.net].png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/resources-tablethd/ccbSliderBgNormal.png", 
-            "target": "Published-iOS/resources-tablethd/ccbSliderBgNormal.png"
-        }, 
-        {
             "asset": "Source/Resources/Published-iOS/resources-tablethd/element_blue_rectangle@4x.png", 
             "target": "Published-iOS/resources-tablethd/element_blue_rectangle@4x.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-tablethd/element_green_rectangle@4x.png", 
             "target": "Published-iOS/resources-tablethd/element_green_rectangle@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/fist.png", 
+            "target": "Published-iOS/resources-tablethd/fist.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-tablethd/Gem-Yellow@4x.png", 
@@ -4193,8 +3601,16 @@
             "target": "Published-iOS/resources-tablethd/Potions_01_128x256_023@4x.png"
         }, 
         {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/rpgTile224@4x.png", 
+            "target": "Published-iOS/resources-tablethd/rpgTile224@4x.png"
+        }, 
+        {
             "asset": "Source/Resources/Published-iOS/resources-tablethd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png", 
             "target": "Published-iOS/resources-tablethd/set_cloud-jumper_e2450132880601f0787c81eaeddafbdda5a4fa1a@4x.png"
+        }, 
+        {
+            "asset": "Source/Resources/Published-iOS/resources-tablethd/spr_button_pictogram_18.png", 
+            "target": "Published-iOS/resources-tablethd/spr_button_pictogram_18.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS/resources-tablethd/window_4.png", 
@@ -5433,190 +4849,6 @@
             "target": "Published-iOS/Wolf/resources-tablethd/wolfsheet1_0 [www.imagesplitter.net]-0-1-9-4.png"
         }, 
         {
-            "asset": "Source/Resources/Published-iOS/Z/Barrier.ccbi", 
-            "target": "Published-iOS/Z/Barrier.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Blank.ccbi", 
-            "target": "Published-iOS/Z/Blank.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/BlockFire.ccbi", 
-            "target": "Published-iOS/Z/BlockFire.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/BodySwap.ccbi", 
-            "target": "Published-iOS/Z/BodySwap.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Bomb.ccbi", 
-            "target": "Published-iOS/Z/Bomb.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/ButtonMenu.ccbi", 
-            "target": "Published-iOS/Z/ButtonMenu.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/ButtonOptions.ccbi", 
-            "target": "Published-iOS/Z/ButtonOptions.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Cat.ccbi", 
-            "target": "Published-iOS/Z/Cat.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/CloudBlock.ccbi", 
-            "target": "Published-iOS/Z/CloudBlock.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Coin.ccbi", 
-            "target": "Published-iOS/Z/Coin.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/DarkMonster.ccbi", 
-            "target": "Published-iOS/Z/DarkMonster.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/DataSelect.ccbi", 
-            "target": "Published-iOS/Z/DataSelect.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/DeadBody.ccbi", 
-            "target": "Published-iOS/Z/DeadBody.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Dog.ccbi", 
-            "target": "Published-iOS/Z/Dog.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/FireBall.ccbi", 
-            "target": "Published-iOS/Z/FireBall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/FireBlock.ccbi", 
-            "target": "Published-iOS/Z/FireBlock.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Forest.ccbi", 
-            "target": "Published-iOS/Z/Forest.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/GameOver.ccbi", 
-            "target": "Published-iOS/Z/GameOver.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Gem.ccbi", 
-            "target": "Published-iOS/Z/Gem.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Goblin.ccbi", 
-            "target": "Published-iOS/Z/Goblin.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Golemn.ccbi", 
-            "target": "Published-iOS/Z/Golemn.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/GroundCorner.ccbi", 
-            "target": "Published-iOS/Z/GroundCorner.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/GroundLeftSide.ccbi", 
-            "target": "Published-iOS/Z/GroundLeftSide.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/GroundWall.ccbi", 
-            "target": "Published-iOS/Z/GroundWall.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/HealthPotion.ccbi", 
-            "target": "Published-iOS/Z/HealthPotion.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Intro.ccbi", 
-            "target": "Published-iOS/Z/Intro.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/LineH.ccbi", 
-            "target": "Published-iOS/Z/LineH.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/LineV.ccbi", 
-            "target": "Published-iOS/Z/LineV.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/LocationSelect.ccbi", 
-            "target": "Published-iOS/Z/LocationSelect.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Mage.ccbi", 
-            "target": "Published-iOS/Z/Mage.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/MainScene.ccbi", 
-            "target": "Published-iOS/Z/MainScene.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Maze.ccbi", 
-            "target": "Published-iOS/Z/Maze.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Mouse.ccbi", 
-            "target": "Published-iOS/Z/Mouse.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/PauseMenu.ccbi", 
-            "target": "Published-iOS/Z/PauseMenu.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Pointer.ccbi", 
-            "target": "Published-iOS/Z/Pointer.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/PopUp.ccbi", 
-            "target": "Published-iOS/Z/PopUp.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/RockSlide.ccbi", 
-            "target": "Published-iOS/Z/RockSlide.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/ScrollTest.ccbi", 
-            "target": "Published-iOS/Z/ScrollTest.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Spider.ccbi", 
-            "target": "Published-iOS/Z/Spider.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Star.ccbi", 
-            "target": "Published-iOS/Z/Star.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/SwipeSet.ccbi", 
-            "target": "Published-iOS/Z/SwipeSet.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Tutorial.ccbi", 
-            "target": "Published-iOS/Z/Tutorial.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/TutorialObject.ccbi", 
-            "target": "Published-iOS/Z/TutorialObject.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Untitled.ccbi", 
-            "target": "Published-iOS/Z/Untitled.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Wizard.ccbi", 
-            "target": "Published-iOS/Z/Wizard.ccbi"
-        }, 
-        {
-            "asset": "Source/Resources/Published-iOS/Z/Wolf.ccbi", 
-            "target": "Published-iOS/Z/Wolf.ccbi"
-        }, 
-        {
             "asset": "Source/Resources/Icons/Settings@2x.png", 
             "target": "Settings@2x.png"
         }, 
@@ -5802,6 +5034,11 @@
                     "prefix": "Source/", 
                     "suffix": "Intro.h"
                 }, 
+                "LevelUp.h": {
+                    "key": "LevelUp.h", 
+                    "prefix": "Source/", 
+                    "suffix": "LevelUp.h"
+                }, 
                 "LocationSelect.h": {
                     "key": "LocationSelect.h", 
                     "prefix": "./", 
@@ -5851,12 +5088,17 @@
                     "key": "SwipeSet.h", 
                     "prefix": "Source/", 
                     "suffix": "SwipeSet.h"
+                }, 
+                "Tutorial.h": {
+                    "key": "Tutorial.h", 
+                    "prefix": "Source/", 
+                    "suffix": "Tutorial.h"
                 }
             }, 
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmpUEtawB/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmphFaBFv/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -5924,11 +5166,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmpUEtawB/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmphFaBFv/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmpUEtawB/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/hl/2qp3j2m91fz5r6qhtmsz9xlr0000gn/T/tmphFaBFv/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -6079,6 +5321,13 @@
             "flags": [], 
             "header_paths": [], 
             "language": "objc", 
+            "source": "Source/LevelUp.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
             "source": "Source/MainScene.m"
         }, 
         {
@@ -6115,6 +5364,13 @@
             "header_paths": [], 
             "language": "objc", 
             "source": "Source/SwipeSet.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "Source/Tutorial.m"
         }, 
         {
             "defines": {}, 
