@@ -19,6 +19,7 @@
 @property(nonatomic)NSMutableArray* unlockedCharacterExp;
 @property(nonatomic) int gameProgress;
 @property(nonatomic) int currentTutorialProgress;
+@property(nonatomic) NSString* data;
 +(GameData*) sharedData;
 
 @end

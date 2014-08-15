@@ -87,6 +87,7 @@
     CCLabelTTF *_myHP;
     CCLabelTTF *_enemyHP;
     CCLabelTTF *_coinLabel;
+    CCLabelTTF *_prompt;
     float box;
     BOOL _paused;
     int left,right,up,down;
@@ -122,7 +123,7 @@
         NSString* nigah = @"Spider";
          creatures = [NSArray arrayWithObjects: nigah,@"Goblin", nil];
         NSString* swoop = @"Bomb";
-        attacks = [NSArray arrayWithObjects: swoop,@"Fire", nil];
+        attacks = [NSArray arrayWithObjects: swoop,@"NinjaStar", nil];
 
     }
     else if([data.levelname isEqualToString:@"LocationSky"])
@@ -140,10 +141,10 @@
     {
         [self loadCreaturesWithNum:3];
         // creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
-        NSString* nigah = @"Wolf";
-        creatures = [NSArray arrayWithObjects: nigah,nigah,nigah,nigah,nigah, nil];
+        NSString* nigah = @"Spider";
+        creatures = [NSArray arrayWithObjects: nigah,@"Mage", nil];
         NSString* swoop = @"Bomb";
-        attacks = [NSArray arrayWithObjects: swoop,swoop,swoop,swoop,swoop, nil];
+        attacks = [NSArray arrayWithObjects: swoop,@"Barrier", nil];
         
         
     }
@@ -174,7 +175,7 @@
     {
         [self loadCreaturesWithNum:0];
         creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
-        attacks = [NSArray arrayWithObjects: @"Bomb",@"RockSlide",@"fire",@"fire",@"Bomb", nil];
+        attacks = [NSArray arrayWithObjects: @"Bomb",@"RockSlide",@"NinjaStar",@"NinjaStar",@"Bomb", nil];
         
     }
 
@@ -190,8 +191,12 @@
     {
         
         [self updateExpBars2];
+       
     }
-    
+    else
+    {
+         _coinLabel.visible = false;
+    }
     
 }
 -(void)saveData
@@ -308,6 +313,7 @@
     [self addChild:myPauseMenu];
 }
 - (void)onEnter {
+    
     [super onEnter];
     
 
@@ -728,6 +734,7 @@
         if(_mainCharacter.position.x>touchPoint.x)
         {
             [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkL"];
+            
             NSLog(@"move left");
             [_mainCharacter.physicsBody setVelocity:CGPointMake(-100.0, _mainCharacter.physicsBody.velocity.y)];
 
@@ -811,6 +818,24 @@
 {
     if(c1!=nil)
     {
+        if(c1.physicsBody.velocity.x>0)
+        {
+            if([c1.animationManager runningSequenceName]==nil)
+            {
+                [c1.animationManager runAnimationsForSequenceNamed:@"WalkR"];
+            }
+            
+        }
+        else if(c1.physicsBody.velocity.x<0)
+        {
+            if([c1.animationManager runningSequenceName]==nil)
+            {
+                      [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
+            }
+            
+            
+
+        }
         
         if([self updateCreatureAttackDirection:c1])
         {
@@ -898,6 +923,15 @@
 
 }
 -(void)moveEnemy:(Creature*) c1{
+    float mspeed;
+    if([c1.ccbDirectory isEqualToString:@"Spider"])
+    {
+        mspeed = 50.0;
+    }
+    else
+    {
+        mspeed = 25.0;
+    }
     if(c1.atTargetXPoint)
     {
         
@@ -907,7 +941,7 @@
                 [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
           
             NSLog(@"move left");
-            [c1.physicsBody setVelocity:CGPointMake(-25.0, c1.physicsBody.velocity.y)];
+            [c1.physicsBody setVelocity:CGPointMake(-mspeed, c1.physicsBody.velocity.y)];
             //c1.targetXPoint = c1.position.x-50;
             
         }
@@ -917,7 +951,7 @@
             [c1.animationManager runAnimationsForSequenceNamed:@"WalkR"];
         
             NSLog(@"move right");
-            [c1.physicsBody setVelocity:CGPointMake(25.0, c1.physicsBody.velocity.y)];
+            [c1.physicsBody setVelocity:CGPointMake(mspeed, c1.physicsBody.velocity.y)];
             //c1.targetXPoint = c1.position.x+50;
         }
         c1.atTargetXPoint = false;
@@ -925,17 +959,24 @@
     }
     else if(c1.justFinishedAttacking)
     {
-        if(c1.moveDirection)
+        if(c1.position.x>=_mainCharacter.position.x)
         {
             
+            [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
+            
             NSLog(@"move left");
-            [c1.physicsBody setVelocity:CGPointMake(-50.0, c1.physicsBody.velocity.y)];
+            [c1.physicsBody setVelocity:CGPointMake(-mspeed, c1.physicsBody.velocity.y)];
+            //c1.targetXPoint = c1.position.x-50;
             
         }
         else
         {
+            
+            [c1.animationManager runAnimationsForSequenceNamed:@"WalkR"];
+            
             NSLog(@"move right");
-            [c1.physicsBody setVelocity:CGPointMake(50.0, c1.physicsBody.velocity.y)];
+            [c1.physicsBody setVelocity:CGPointMake(mspeed, c1.physicsBody.velocity.y)];
+            //c1.targetXPoint = c1.position.x+50;
         }
         c1.justFinishedAttacking = false;
     }
@@ -954,7 +995,12 @@
         //spawn if there are currently no creatures under that spawnnode
         if(nodeB==_mainCharacter)
         {
+            
             _mainCharacter.health += 5;
+            if(_mainCharacter.health>_mainCharacter.maxhealth)
+            {
+                _mainCharacter.health = _mainCharacter.maxhealth;
+            }
             [nodeA removeFromParent];
         }
       
@@ -1194,7 +1240,7 @@
     }key:nodeA];
     return true;
 }
-- (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair Attack:(CCSprite *)nodeA BlockFire:(CCSprite*)nodeB
+- (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)pair Attack:(CCSprite *)nodeA BlockNinjaStar:(CCSprite*)nodeB
 {
     [[_physicsNode space] addPostStepBlock:^{
         [nodeA removeFromParent];
@@ -1214,6 +1260,7 @@
         touchedBody = [NSString stringWithString:nodeB.ccbDirectory];
         _touchedDB = true;
         _mainCharacter.ccbDirectory = nodeB.ccbDirectory;
+      
         _currentWorkingAttack = [NSString stringWithString:nodeB.attack];
 
         [self performSelector:@selector(spawnEnemyAtSpawnNode:) withObject:[NSNumber numberWithInt:nodeB.spawnNodeNum] afterDelay:15.0];
@@ -1256,7 +1303,7 @@ _closeAttackActivated = false;
         _closeAttackActivated = false;
          [_mainCharacter.children[2] removeFromParent];
         CCNode *bodySwap = [CCBReader load:@"BodySwap"];
-        // fire.physicsBody.collisionType = c1.physicsBody.collisionType;
+        // NinjaStar.physicsBody.collisionType = c1.physicsBody.collisionType;
         
         bodySwap.physicsBody.collisionGroup = _mainCharacter.physicsBody.collisionGroup;
         
@@ -1406,7 +1453,7 @@ _closeAttackActivated = false;
         _mainCharacter.maxhealth = 20;
         _mainCharacter.physicsBody.collisionGroup = @"good";
         _mainCharacter.health = _mainCharacter.maxhealth;
-        
+          _mainCharacter.right = -1;
         _mainCharacter.position = _myChar.position;
         CCNode* aura =[CCBReader load:@"Aura"];
         aura.position = ccp(30,20);
@@ -1416,8 +1463,7 @@ _closeAttackActivated = false;
         
         //_physicsNode.position = [follow currentOffset];
         //[_physicsNode runAction:follow];
-        _mainCharacter.right = 1;
-        _mainCharacter.position = ccp(x1,y1);
+               _mainCharacter.position = ccp(x1,y1);
         while(_mainCharacter.health!=temphp)
         {
             _mainCharacter.health--;
@@ -1569,6 +1615,7 @@ _closeAttackActivated = false;
         //[self updateExpBars];
         
         [self resetJump];
+        [self checkPlayerWalk];
         
         
         [self checkForContactWithCloseAttack];
@@ -1584,7 +1631,27 @@ _closeAttackActivated = false;
        
     }
 }
-
+-(void)checkPlayerWalk
+{
+    if(_mainCharacter.physicsBody.velocity.x>0)
+    {
+        if([_mainCharacter.animationManager runningSequenceName]==nil)
+        {
+            [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkR"];
+        }
+        
+    }
+    else if(_mainCharacter.physicsBody.velocity.x<0)
+    {
+        if([_mainCharacter.animationManager runningSequenceName]==nil)
+        {
+            [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkL"];
+        }
+        
+        
+        
+    }
+}
 -(void)spawn
 {
     if(_timeSinceGameStart>4.0)
@@ -1596,18 +1663,19 @@ _closeAttackActivated = false;
 
 -(void)creature: (Creature*) c1 attack:(NSString*) str
 {
-    if([str isEqual:@"Fire"])
+    if([str isEqual:@"NinjaStar"])
     {
-        CCNode *fire = [CCBReader load:@"FireBall"];
-       // fire.physicsBody.collisionType = c1.physicsBody.collisionType;
-         fire.physicsBody.collisionGroup = c1.physicsBody.collisionGroup;
+        CCNode *NinjaStar = [CCBReader load:@"FireBall"];
+       // NinjaStar.physicsBody.collisionType = c1.physicsBody.collisionType;
+         NinjaStar.physicsBody.collisionGroup = c1.physicsBody.collisionGroup;
        
-        fire.physicsBody.sensor = YES;
-        [fire.physicsBody setAngularVelocity:10.0];
-        fire.position = ccpAdd(c1.position, ccp(0, 20));
+        NinjaStar.physicsBody.sensor = YES;
+        [NinjaStar.physicsBody setAngularVelocity:10.0];
+        NinjaStar.position = ccpAdd(c1.position, ccp(0, 20));
 
-        [_physicsNode addChild:fire];
-        [fire.physicsBody setVelocity:CGPointMake(c1.right*80, 0)];
+        [_physicsNode addChild:NinjaStar];
+        [NinjaStar.physicsBody setVelocity:CGPointMake(c1.right*80, 0)];
+        [self performSelector:@selector(eraseAttack:) withObject:NinjaStar afterDelay:15.0f];
         
       
     }
@@ -1617,7 +1685,7 @@ _closeAttackActivated = false;
         if(!_closeAttackActivated)
         {
             CCNode *bodySwap = [CCBReader load:@"BodySwap"];
-            // fire.physicsBody.collisionType = c1.physicsBody.collisionType;
+            // NinjaStar.physicsBody.collisionType = c1.physicsBody.collisionType;
             
             bodySwap.physicsBody.collisionGroup = c1.physicsBody.collisionGroup;
             
@@ -1639,12 +1707,12 @@ _closeAttackActivated = false;
         
         //CGPoint launchDirection = ccp(c1.right, 0);
         //CGPoint force = ccpMult(launchDirection, 8000);
-        //[fire.physicsBody applyForce:force];
+        //[NinjaStar.physicsBody applyForce:force];
 }
     else if([str isEqual:@"Bomb"])
     {
         CCNode *bomb = [CCBReader load:@"Bomb"];
-        // fire.physicsBody.collisionType = c1.physicsBody.collisionType;
+        // NinjaStar.physicsBody.collisionType = c1.physicsBody.collisionType;
         bomb.physicsBody.collisionGroup = c1.physicsBody.collisionGroup;
         
       

@@ -13,6 +13,7 @@
 		6232F03E1971EC0C00B62F58 /* SwipeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232F03D1971EC0C00B62F58 /* SwipeSet.m */; };
 		62711D57199D3D3B00E822A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711D56199D3D3B00E822A4 /* Images.xcassets */; };
 		62A15655199D52C100FF1B32 /* actual.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A15654199D52C100FF1B32 /* actual.xcassets */; };
+		62A15658199E5DEA00FF1B32 /* PopUp3.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A15657199E5DEA00FF1B32 /* PopUp3.m */; };
 		62B0BD38197D8373005ED9DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62B0BD37197D8373005ED9DE /* README.md */; };
 		62B0BD3C197DA0D3005ED9DE /* CreatureQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD3B197DA0D3005ED9DE /* CreatureQueue.m */; };
 		62B0BD41197EA81F005ED9DE /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B0BD40197EA81F005ED9DE /* GameOver.m */; };
@@ -92,6 +93,8 @@
 		6232F03D1971EC0C00B62F58 /* SwipeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeSet.m; path = Source/SwipeSet.m; sourceTree = "<group>"; };
 		62711D56199D3D3B00E822A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SPG/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		62A15654199D52C100FF1B32 /* actual.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = actual.xcassets; path = ../../actual.xcassets; sourceTree = "<group>"; };
+		62A15656199E5DEA00FF1B32 /* PopUp3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopUp3.h; path = Source/PopUp3.h; sourceTree = "<group>"; };
+		62A15657199E5DEA00FF1B32 /* PopUp3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopUp3.m; path = Source/PopUp3.m; sourceTree = "<group>"; };
 		62B0BD37197D8373005ED9DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		62B0BD3A197DA0D3005ED9DE /* CreatureQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreatureQueue.h; path = Source/CreatureQueue.h; sourceTree = "<group>"; };
 		62B0BD3B197DA0D3005ED9DE /* CreatureQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreatureQueue.m; path = Source/CreatureQueue.m; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				62BC5D201989703C001A25D5 /* PopUp.m */,
 				62C1EDAB1992894B002C3600 /* LevelUp.h */,
 				62C1EDAC1992894B002C3600 /* LevelUp.m */,
+				62A15656199E5DEA00FF1B32 /* PopUp3.h */,
+				62A15657199E5DEA00FF1B32 /* PopUp3.m */,
 				62B4D0DB198570A8007790EB /* MyScrollView.h */,
 				62B4D0DC198570A8007790EB /* MyScrollView.m */,
 				622E28E9198BD4B600F5C128 /* MoveButton.h */,
@@ -490,6 +495,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				62E42CDE1971489E0009817F /* DataSelect.m in Sources */,
 				62C1EDAD1992894B002C3600 /* LevelUp.m in Sources */,
+				62A15658199E5DEA00FF1B32 /* PopUp3.m in Sources */,
 				62B0BD5219812968005ED9DE /* ButtonOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

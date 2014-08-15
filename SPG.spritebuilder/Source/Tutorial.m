@@ -21,6 +21,8 @@
 {
     int _tutorialProgress;
     CCSprite* _cursor;
+    CCSprite* _finger;
+    CCSprite* _fingerd;
     float initialPlayerPosition;
     GameData *data;
     CCPhysicsNode* _physicsNode;
@@ -37,6 +39,7 @@
     
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]==nil)
     {
+        
         // accept touches on the grid
         //self.userInteractionEnabled = YES;
         initialPlayerPosition = self.me.position.x;
@@ -197,6 +200,8 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
             
             if(data.gameProgress<2)
             {
+                _cursor.visible = true;
+                _finger.visible = false;
 //                _cursor.rotation = (90.0);
 //                _cursor.position= ccp(50.0f,250.0f);
 //                 [ _cursor.physicsBody setVelocity:ccp(0,10)];
@@ -269,6 +274,8 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
 {
     if(data.gameProgress==3)
     {
+        _fingerd.visible = false;
+        _cursor.visible = false;
         _mylab.string = @"Defeat all Enemies";
         Creature* enemy = (Creature*)[CCBReader load:@"Spider"];
         enemy.physicsBody.sensor = true;
@@ -306,10 +313,10 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
     }
     else if(data.gameProgress==2)
     {
-        _cursor.rotation = (-90.0);
-        _cursor.position = ccp(190.0, 230.0);
-        [_cursor.physicsBody setVelocity:ccp(0,-100)];
-        [self performSelector:@selector(cursoronEnemy) withObject:nil afterDelay:2.0f];
+        //_cursor.rotation = (-90.0);
+        _fingerd.position = ccp(190.0, 230.0);
+        [_fingerd.physicsBody setVelocity:ccp(0,-100)];
+        [self performSelector:@selector(cursoronEnemy) withObject:nil afterDelay:0.0f];
     }
     else
     {
@@ -324,13 +331,17 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
 {
     if(data.gameProgress==3)
     {
-        _cursor.rotation = (180.0);
-        _cursor.position = ccp(190.0, 230.0);
-        [_cursor.physicsBody setVelocity:ccp(100,0)];
+        _finger.visible = true;
+        
+        //_finger.rotation = (180.0);
+        _finger.position = ccp(190.0, 230.0);
+        [_finger.physicsBody setVelocity:ccp(100,0)];
         [self performSelector:@selector(didKillEnemy) withObject:nil afterDelay:2.0f];
            }
     else
     {
+        _cursor.visible = true;
+        _finger.visible = false;
         _mylab.string = @"";
         [self clickOnPause];
         
@@ -343,7 +354,7 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
     if(data.gameProgress==4)
     {
         _cursor.rotation = (90.0);
-        _cursor.position = ccp(60.0, 260.0);
+        _cursor.position = ccp(270.0, 230.0);
         [ _cursor.physicsBody setVelocity:ccp(0,10)];
         [self performSelector:@selector(clickOnPause) withObject:nil afterDelay:.5f];
     }
@@ -352,7 +363,7 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
         
         CCSprite* gem = (CCSprite*)[CCBReader load:@"Gem"];
         gem.physicsBody.sensor = YES;
-        gem.position = ccp(460,50);
+        gem.position = ccp(460,80);
         
         [self.physNode addChild:gem];
         [self repeat];
@@ -380,9 +391,10 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
 {
     if(data.currentTutorialProgress<2)
     {
-        _cursor.rotation = (180.0);
-        _cursor.position = ccp(190.0, 230.0);
-        [_cursor.physicsBody setVelocity:ccp(100,0)];
+        //_cursor.rotation = (180.0);
+        _cursor.visible = false;
+        _finger.position = ccp(190.0, 230.0);
+        [_finger.physicsBody setVelocity:ccp(100,0)];
         [self performSelector:@selector(swipeattack) withObject:nil afterDelay:2.0f];
     }
     else

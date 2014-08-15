@@ -9,12 +9,21 @@
 #import "DataSelect.h"
 #import "GameData.h"
 #import "MainScene.h"
+#import "PopUp3.h"
 
 @implementation DataSelect
 {
 GameData* data;
+    CCSprite* _play1;
+    CCSprite* _play2;
+    CCSprite* _play3;
+    CCSprite* _erase1;
+    CCSprite* _erase2;
+    CCSprite* _erase3;
+    CCLabelTTF* _label;
 
 }
+
 //-(void)saveHighScore:(int) score
 //{
 //
@@ -59,9 +68,9 @@ GameData* data;
 -(void)setUp
 {
     
-     data= [GameData sharedData];
     
-    NSArray* allMyAttacks = [NSArray arrayWithObjects:@"Fire",@"BodySwap",@"Bomb",@"Barrier",@"RockSlide",@"Punch", nil];
+    
+    NSArray* allMyAttacks = [NSArray arrayWithObjects:@"NinjaStar",@"BodySwap",@"Bomb",@"Barrier",@"RockSlide",@"Punch", nil];
     
     data.myMoves =   data.myMoves = [[MoveNode alloc] init];
     data.unlockedAttacks = [NSMutableArray array];
@@ -101,7 +110,7 @@ GameData* data;
     [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"CurrentProgressAttack"];
     [[NSUserDefaults standardUserDefaults] setObject:@"rr" forKey:@"Punch"];
     [[NSUserDefaults standardUserDefaults] setObject:@"dd" forKey:@"BodySwap"];
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Fire"];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"NinjaStar"];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Bomb"];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"RockSlide"];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Barrier"];
@@ -115,7 +124,7 @@ GameData* data;
     NSArray* allCreatures = [NSArray arrayWithObjects:@"Spider",@"Wolf",@"Golemn",@"Mage",@"Goblin", nil];
     for(int i = 0;i< allCreatures.count;i++)
     {
-        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[allLocations objectAtIndex:i] ];
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[allCreatures objectAtIndex:i] ];
     }
     
     for(int i = 0;i< allLocations.count;i++)
@@ -210,4 +219,107 @@ GameData* data;
     _attemptingMove.attack = attk;
     
 }
+
+- (void)onEnter
+{
+    
+
+    [super onEnter];
+
+    // accept touches on the grid
+    self.userInteractionEnabled = YES;
+
+      data= [GameData sharedData];
+    
+
+    
+}
+#pragma mark-
+-(void)touchBegan:(UITouch *)touches withEvent:(UIEvent *)event {
+        CGPoint positionInScene = [touches locationInNode:self];
+    if (CGRectContainsPoint([_play1 boundingBox], positionInScene))
+    {
+        _play1.opacity = .5;
+    }
+    else if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
+    {
+        _play2.opacity = .5;
+    }
+    else if (CGRectContainsPoint([_play3 boundingBox], positionInScene))
+    {
+        _play3.opacity = .5;
+    }
+    else if (CGRectContainsPoint([_erase1 boundingBox], positionInScene))
+    {
+        _erase1.opacity = .5;
+    }
+    else if (CGRectContainsPoint([_erase2 boundingBox], positionInScene))
+    {
+        _erase2.opacity = .5;
+    }
+    else if (CGRectContainsPoint([_erase3 boundingBox], positionInScene))
+    {
+        _erase3.opacity = .5;
+    }
+}
+- (void)touchMoved:(UITouch *)touches withEvent:(UIEvent *)event {
+    
+    }
+
+- (void)touchEnded:(UITouch *)touches withEvent:(UIEvent *)event {
+    CGPoint positionInScene = [touches locationInNode:self];
+
+    if (CGRectContainsPoint([_play1 boundingBox], positionInScene))
+    {
+        
+        [self LoadData1];
+    }
+    if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
+    {
+
+    }
+    if (CGRectContainsPoint([_play3 boundingBox], positionInScene))
+    {
+
+    }
+    
+    if (CGRectContainsPoint([_erase1 boundingBox], positionInScene))
+    {
+        if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+        {
+        PopUp3* kkk = (PopUp3*)[CCBReader load:@"PopUp3"];
+        [self addChild:kkk];
+        }
+    }
+    if (CGRectContainsPoint([_erase2 boundingBox], positionInScene))
+    {
+        
+    }
+    if (CGRectContainsPoint([_erase3 boundingBox], positionInScene))
+    {
+       
+    }
+
+    _play1.opacity = 0;
+    _play2.opacity = 0;
+    _play3.opacity = 0;
+    _erase1.opacity = 0;
+    _erase2.opacity = 0;
+    _erase3.opacity = 0;
+    
+}
+-(void)update:(CCTime)delta
+{
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+    {
+        _label.string = @"Continue Game";
+    }
+    else
+    {
+        _label.string = @"New Game";
+
+    }
+}
+
+
 @end

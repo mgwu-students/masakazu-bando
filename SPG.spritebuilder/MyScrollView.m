@@ -16,10 +16,10 @@
     GameData* data;
     MyScrollView* _me;
 }
--(void)Fire
+-(void)NinjaStar
 {
     
-    self.myAttack = @"Fire";
+    self.myAttack = @"NinjaStar";
     
     self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
     
@@ -88,15 +88,20 @@
     for(int i = 0; i<[data.unlockedAttacks count];i++)
     {
         
+        
         MoveButton* myButton = (MoveButton*)[CCBReader load:@"MyButton"];
+        
         [((CCButton*)(myButton.children[0])) label].string = [data.unlockedAttacks objectAtIndex:i];
+        
+        
         if([[data.unlockedAttacks objectAtIndex:i] isEqualToString:@"BodySwap"])
         {
             [((CCButton*)(myButton.children[0])) setTarget:self selector:@selector(BodySwap)];
         }
-        else if([[data.unlockedAttacks objectAtIndex:i] isEqualToString:@"Fire"])
+        else if([[data.unlockedAttacks objectAtIndex:i] isEqualToString:@"NinjaStar"])
         {
-            [((CCButton*)(myButton.children[0])) setTarget:self selector:@selector(Fire)];
+            [((CCButton*)(myButton.children[0])) setTarget:self selector:@selector(NinjaStar)];
+  
         }
         else if([[data.unlockedAttacks objectAtIndex:i] isEqualToString:@"Bomb"])
         {
