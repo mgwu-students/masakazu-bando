@@ -1137,7 +1137,7 @@
     if(nodeB.health<2)
     {
           _killedEnemyCount++;
-        if(_killedEnemyCount>=7)
+        if(_killedEnemyCount>=10)
         {
             LevelUp* yeh = [CCBReader load:@"PopUp2" owner:self];
             ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).fontSize = (10.0);
