@@ -20,6 +20,10 @@ GameData* data;
     CCSprite* _erase1;
     CCSprite* _erase2;
     CCSprite* _erase3;
+    CCNode* _thing1;
+    CCNode* _thing2;
+    CCNode* _thing3;
+    
     CCLabelTTF* _label;
 
 }
@@ -236,9 +240,10 @@ GameData* data;
 }
 #pragma mark-
 -(void)touchBegan:(UITouch *)touches withEvent:(UIEvent *)event {
-        CGPoint positionInScene = [touches locationInNode:self];
+        CGPoint positionInScene = [touches locationInNode:_thing1];
     if (CGRectContainsPoint([_play1 boundingBox], positionInScene))
     {
+        
         _play1.opacity = .5;
     }
     else if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
@@ -267,7 +272,7 @@ GameData* data;
     }
 
 - (void)touchEnded:(UITouch *)touches withEvent:(UIEvent *)event {
-    CGPoint positionInScene = [touches locationInNode:self];
+  CGPoint positionInScene = [touches locationInNode:_thing1];
 
     if (CGRectContainsPoint([_play1 boundingBox], positionInScene))
     {
