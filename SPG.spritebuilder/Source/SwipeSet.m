@@ -39,6 +39,7 @@
     GameData* data;
     int maxRight, maxLeft,maxUp,maxDown;
     BOOL _finishedMove;
+    NSString* dataType;
     
 }
 -(void)setMoveNode: (MoveNode*) mn
@@ -55,7 +56,8 @@
     {
         _grid.opacity = 100.0;
         _label.string = [_myScrollView.children[0] myAttack];
-        _label2.string =  [[NSUserDefaults standardUserDefaults] objectForKey:[_myScrollView.children[0] myAttack]];
+        _label2.string =  [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",[_myScrollView.children[0] myAttack],dataType]];
+        
     }
     
 }
@@ -64,6 +66,7 @@
 {
     
       data= [GameData sharedData];
+    dataType = data.dataType;
     _swipeInitiated = false;
     tapCount = 0;
     [super onEnter];
@@ -116,8 +119,19 @@
         up = 0;
         
         _current = touchPoint;
+        
         _moveMap = [CCBReader load:@"Star"];
+        ((CCNode*)([[_moveMap children] objectAtIndex:0])).visible = false;
         _moveMap.position = touchPoint;
+       
+        
+        
+        CCNode* s2 = [CCBReader load:@"Star"];
+        [_moveMap addChild:s2];
+        s2.position = ccp(s2.position.x+50.0*right+12.0,s2.position.y+50.0*up+12.0);
+        
+        
+      
         [self addChild:_moveMap];
         _attemptingMove =self.myMoveNode;
         maxRight=0;
@@ -135,7 +149,8 @@
 }
 -(void)Choose
 {
-    _front.position = ccp(_front.position.x,_front.position.y-1.0f);
+    _front.position = ccp(_front.position.x-1.0f,_front.position.y);
+
 }
 - (void)touchMoved:(UITouch *)touches withEvent:(UIEvent *)event {
     if([_myScrollView.children[0] myAttack]!=nil&&!_finishedMove)
@@ -375,24 +390,24 @@
     if(_move.attack==nil)
     {
 
-        if([[NSUserDefaults standardUserDefaults] objectForKey:attk]==nil)
+        if([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",attk,dataType]]==nil)
         {
             _move.attack = attk;
-            [[NSUserDefaults standardUserDefaults] setObject:str forKey:attk];
+            [[NSUserDefaults standardUserDefaults] setObject:str forKey:[NSString stringWithFormat: @"%@%@",attk,dataType]];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
         else
         {
             _move.attack = attk;
-            [self eraseMove:[[NSUserDefaults standardUserDefaults] objectForKey:attk]];
-            [[NSUserDefaults standardUserDefaults] setObject:str forKey:attk];
+            [self eraseMove:[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",attk,dataType]]];
+            [[NSUserDefaults standardUserDefaults] setObject:str forKey:[NSString stringWithFormat: @"%@%@",attk,dataType]];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
         
     }
     else
     {
-        LevelUp* yeh = [CCBReader load:@"PopUp2" owner:self];
+        LevelUp* yeh = (LevelUp*)[CCBReader load:@"PopUp2" owner:self];
         ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).fontSize = (10.0);
         ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).string = [NSString stringWithFormat:@"That pattern is currently used for your attack: %@", _move.attack];
         [self addChild:yeh];

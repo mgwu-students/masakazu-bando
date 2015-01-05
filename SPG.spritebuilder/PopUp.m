@@ -26,7 +26,7 @@
 {
     if(!offscreen)
     {
-        CCScene *gameplayScene = [CCBReader loadAsScene:@"LocationSelect"];
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"Location"];
         [[CCDirector sharedDirector] replaceScene:gameplayScene];
         offscreen = true;
     }

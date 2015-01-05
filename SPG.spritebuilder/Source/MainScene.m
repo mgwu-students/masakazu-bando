@@ -17,8 +17,11 @@
 #import "GameData.h"
 #import "Tutorial.h"
 #import "LevelUp.h"
+
+
 @implementation MainScene
 {
+    NSString* dataType;
     int _killedEnemyCount;
     NSString* _currentWorkingAttack;
     int _currentCreatureExp;
@@ -99,16 +102,16 @@
     BOOL _gotHit;
     int _expSpider;
     int numOfEnem;
- 
+    BOOL _bossroom;
     GameData* data;
 }
 -(void)initialize
 {
     
     
-    data= [GameData sharedData];
+
     
-    _numOfCoins = [[NSUserDefaults standardUserDefaults] integerForKey:@"Coins"];
+//    _numOfCoins = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithString:(@"%@%@",@"Coins",dataType)]];
     _coinLabel.string = [NSString stringWithFormat:@"%d", _numOfCoins];
     
     //JESSICA WAS HERE <3
@@ -119,14 +122,26 @@
     if([data.levelname isEqualToString:@"LocationForest"])
     {
         [self loadCreaturesWithNum:3];
-       // creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
-        NSString* nigah = @"Spider";
-         creatures = [NSArray arrayWithObjects: nigah,@"Goblin", nil];
-        NSString* swoop = @"Bomb";
-        attacks = [NSArray arrayWithObjects: swoop,@"NinjaStar", nil];
+        if(data.currentLevel==1)
+        {
+            // creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
+            NSString* nigah = @"Spider";
+            creatures = [NSArray arrayWithObjects: nigah,@"Spider", nil];
+            NSString* swoop = @"Bomb";
+            attacks = [NSArray arrayWithObjects: swoop,@"Bomb", nil];
+        }
+        else
+        {
+            // creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
+            NSString* nigah = @"Spider";
+            creatures = [NSArray arrayWithObjects: nigah,@"Goblin", nil];
+            NSString* swoop = @"Bomb";
+            attacks = [NSArray arrayWithObjects: swoop,@"NinjaStar", nil];
+        }
+
 
     }
-    else if([data.levelname isEqualToString:@"LocationSky"])
+    else if([data.levelname isEqualToString:@"LocationSky2"])
     {
         [self loadCreaturesWithNum:3];
         // creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
@@ -150,12 +165,13 @@
     }
     else if([data.levelname isEqualToString:@"LocationFactory"])
     {
+        _bossroom = true;
         [self loadCreaturesWithNum:3];
         // creatures = [NSArray arrayWithObjects: @"Spider",@"Golemn",@"Mage",@"Wolf",@"Goblin", nil];
-        NSString* nigah = @"Golemn";
-        creatures = [NSArray arrayWithObjects: nigah,nigah,nigah,nigah,nigah, nil];
-        NSString* swoop = @"RockSlide";
-        attacks = [NSArray arrayWithObjects: swoop,swoop,swoop,swoop,swoop, nil];
+        NSString* nigah = @"Angel";
+        creatures = [NSArray arrayWithObjects: nigah,@"Angel", nil];
+        NSString* swoop = @"Summon";
+        attacks = [NSArray arrayWithObjects: swoop,@"Summon", nil];
         
         
     }
@@ -179,15 +195,18 @@
         
     }
 
-    _mainCharacter =(Creature*)[CCBReader load:[[NSUserDefaults standardUserDefaults] objectForKey:@"CreatureType"]];
-    _mainCharacter.ccbDirectory =  [[NSUserDefaults standardUserDefaults] objectForKey:@"CreatureType"];
-    _currentWorkingAttack = [[NSUserDefaults standardUserDefaults] objectForKey:@"CurrentProgressAttack"];
     
-    _myHP.string = [[NSUserDefaults standardUserDefaults] objectForKey:@"CreatureType"];
+    _mainCharacter =(Creature*)[CCBReader load:[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"CreatureType%@",dataType]]];
+    
+    _mainCharacter.ccbDirectory =  [[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"CreatureType%@",dataType]];
+    
+    _currentWorkingAttack = [[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"CurrentProgressAttack%@",dataType]];
+    
+    _myHP.string = [[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"CreatureType%@",dataType]];
 
         _myMoves = data.myMoves;
     
-    if( [[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+    if( [[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"didFinishTutorial%@",dataType]]!=nil)
     {
         
         [self updateExpBars2];
@@ -207,10 +226,10 @@
     data.myMoves = _myMoves;
 
 
-    [[NSUserDefaults standardUserDefaults] setInteger:_numOfCoins forKey:@"Coins"];
+    [[NSUserDefaults standardUserDefaults] setInteger:_numOfCoins forKey: [NSString stringWithFormat: @"Coins%@",dataType]];
     
-    [[NSUserDefaults standardUserDefaults] setObject:_mainCharacter.ccbDirectory forKey:@"CreatureType"];
-    [[NSUserDefaults standardUserDefaults] setObject:_currentWorkingAttack forKey:@"CurrentProgressAttack"];
+    [[NSUserDefaults standardUserDefaults] setObject:_mainCharacter.ccbDirectory forKey: [NSString stringWithFormat: @"CreatureType%@",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:_currentWorkingAttack forKey: [NSString stringWithFormat: @"CurrentProgressAttack%@",dataType]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
@@ -220,7 +239,8 @@
 }
 -(void)didLoadFromCCB
 {
-   
+        data= [GameData sharedData];
+    dataType = data.dataType;
 //NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 //    if([prefs objectForKey:@"Username"]==nil)
 //    {
@@ -316,7 +336,10 @@
     
     [super onEnter];
     
-
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play background sound
+    [audio playBg:@"Battle.mp3" loop:TRUE];
+    
     // accept touches on the grid
     self.userInteractionEnabled = YES;
 
@@ -332,6 +355,9 @@
     _mainCharacter.position = _myChar.position;
     
     _mainCharacter.right = 1;
+       ((CCSprite*)([[_mainCharacter children] objectAtIndex:0])).flipX= true;
+
+   
     CCNode* aura =[CCBReader load:@"Aura"];
     aura.position = ccp(30,20);
     [_mainCharacter addChild:aura];
@@ -345,10 +371,20 @@
     //follow = [CCActionFollow actionWithTarget:_mainCharacter worldBoundary:[_levelNode.children[0] boundingBox]];
     //[_physicsNode runAction:follow];
     [self addTutorial];
+    if(_bossroom)
+    {
+        [self spawn];
+    }
 
 }
 
-
+-(void)onExit
+{
+    [super onExit];
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play background sound
+    [audio stopBg];
+}
 
 -(void)addTutorial
 {
@@ -388,7 +424,7 @@
                             format:&format
                             errorDescription:&errorDesc];
     if (!tempdic) {
-        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+        //nslog(@"Error reading plist: %@, format: %d", errorDesc, format);
     }
 }
 #pragma mark-
@@ -396,10 +432,7 @@
 //     _mainCharacter.physicsBody.body.body->velocity_func = creatureMover;
     
     
-   
-    CGPoint touchPoint2 = [touches locationInNode:self];
-    
-  
+
 
 //    if( touchPoint2.x<40&&touchPoint2.y>280)
 //    {
@@ -418,7 +451,7 @@
             
             tapCount = [touches tapCount];
             
-            NSLog(@"touchbegan");
+
             _touchInitiated = true;
             
             right = 0;
@@ -449,7 +482,7 @@
 - (void)touchMoved:(UITouch *)touches withEvent:(UIEvent *)event {
     if(!_userPressedPause&&!_finishedMove)
     {
-        NSLog(@"touchmoved");
+
         CGPoint positionInScene = [touches locationInNode:_levelNode.children[0]];
         
         if(positionInScene.x-_current.x>box/2)
@@ -460,7 +493,7 @@
                 if(_attemptingMove.attack!=nil)
                 {
                     //_attemptingMove.attack = [[Attack alloc] init];
-                    NSLog(@"SWAGGER");
+        
                     
                     [self creature:(_mainCharacter)attack:(_attemptingMove.attack)];
                     
@@ -472,7 +505,7 @@
                 if(_attemptingMove.Right==nil)
                 {
                     _attemptingMove.Right = [[MoveNode alloc] init];
-                    NSLog(@"Right");
+   
                     
                     //            CCNode* bar = [CCBReader load:@"LineH"];
                     //            bar.position = positionInScene;
@@ -512,7 +545,7 @@
                 if(_attemptingMove.Left==nil)
                 {
                     _attemptingMove.Left = [[MoveNode alloc] init];
-                    NSLog(@"Left");
+        
                     
                 }
                 
@@ -551,7 +584,7 @@
                 if(_attemptingMove.Up==nil)
                 {
                     _attemptingMove.Up = [[MoveNode alloc] init];
-                    NSLog(@"Up");
+                    //nslog(@"Up");
                 }
                 
                 _swipeInitiated = true;
@@ -589,7 +622,7 @@
                 if(_attemptingMove.Down==nil)
                 {
                     _attemptingMove.Down = [[MoveNode alloc] init];
-                    NSLog(@"Down");
+                    //nslog(@"Down");
                 }
                 
                 
@@ -618,7 +651,7 @@
     
     if(!_userPressedPause)
     {
-        NSLog(@"touchended");
+        //nslog(@"touchended");
         
         
         if(!_swipeInitiated)
@@ -636,7 +669,7 @@
             [self singleTap:touches];
         }
         else{
-            NSLog(@"DONE");
+            //nslog(@"DONE");
             if(!_paused)
             {
                 
@@ -693,15 +726,15 @@
     NSArray * myDataArray = [NSArray arrayWithObjects:link,c1, nil];
     return myDataArray;
 }
--(void)runAnimation:(NSArray*)arr
-{
-   
-    [((Creature*)arr[1]).animationManager runAnimationsForSequenceNamed:((NSString*)arr[0])];
-    
-    float animationDuration;
-    
-    [self performSelector:@selector(runAnimation:) withObject:arr afterDelay:animationDuration];
-}
+//-(void)runAnimation:(NSArray*)arr
+//{
+//   
+//    [((Creature*)arr[1]).animationManager runAnimationsForSequenceNamed:((NSString*)arr[0])];
+//    
+//    float animationDuration;
+//
+//    [self performSelector:@selector(runAnimation:) withObject:arr afterDelay:animationDuration];
+//}
 -(void)singleTap:(UITouch*)touches
 {
    
@@ -710,20 +743,20 @@
     CGPoint touchPoint = [touches locationInNode:_levelNode.children[0]];
    
     
-    NSLog(@"enemyxpos->%f  enemyypos->%f",_mainCharacter.boundingBox.origin.x,_mainCharacter.boundingBox.origin.y);
-    NSLog(@"touchxpos->%f  touchypos->%f",touchPoint.x,touchPoint.y);
+    //nslog(@"enemyxpos->%f  enemyypos->%f",_mainCharacter.boundingBox.origin.x,_mainCharacter.boundingBox.origin.y);
+    //nslog(@"touchxpos->%f  touchypos->%f",touchPoint.x,touchPoint.y);
     for(int i = 0; i<_aliveSetOfCreatures.count;i++)
     {
             if (CGRectContainsPoint([_aliveSetOfCreatures[i] boundingBox], touchPoint))
           {
                //some action if _part01 is touched
-               NSLog(@"enemy is touched");
+               //nslog(@"enemy is touched");
               _mainCharacter.target = _aliveSetOfCreatures[i];
               _enemyHP.string = _mainCharacter.target.ccbDirectory;
               //    if (CGRectContainsPoint(_mainCharacter.boundingBox, touchPoint))
               //    {
               //        //some action if _part01 is touched
-              //        NSLog(@"enemy is touched");
+              //        //nslog(@"enemy is touched");
               //    }
               _clickedOnEnemy = true;
             }
@@ -733,25 +766,27 @@
         
         if(_mainCharacter.position.x>touchPoint.x)
         {
+            ((CCSprite*)([[_mainCharacter children] objectAtIndex:0])).flipX= false;
             [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkL"];
             
-            NSLog(@"move left");
+            //nslog(@"move left");
             [_mainCharacter.physicsBody setVelocity:CGPointMake(-100.0, _mainCharacter.physicsBody.velocity.y)];
 
             _mainCharacter.right = -1;
             
-            NSLog(@"%f",_mainCharacter.physicsBody.velocity.x);
+            //nslog(@"%f",_mainCharacter.physicsBody.velocity.x);
             
         }
         else
         {
-            [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkR"];
+            ((CCSprite*)([[_mainCharacter children] objectAtIndex:0])).flipX = true;
+            [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkL"];
            // [_mainCharacter.animationManager ]
-            NSLog(@"move right");
+            //nslog(@"move right");
             _mainCharacter.right = 1;
             [_mainCharacter.physicsBody setVelocity:CGPointMake(100.0, _mainCharacter.physicsBody.velocity.y)];
 
-            NSLog(@"%f",_mainCharacter.physicsBody.velocity.x);
+            //nslog(@"%f",_mainCharacter.physicsBody.velocity.x);
         }
         _mainCharacter.targetXPoint = touchPoint.x;
         _mainCharacter.atTargetXPoint = false;
@@ -781,7 +816,7 @@
            [self performSelector:@selector(allowJump) withObject:nil afterDelay:3.0f];
 
     }
-   // NSLog(@"UP");
+   // //nslog(@"UP");
     
     //[self pause];
     
@@ -791,7 +826,17 @@
     
 }
 
+-(void)redden:(Creature*) c1
+{
 
+    ((CCSprite*)([[c1 children] objectAtIndex:0])).colorRGBA= [CCColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5];
+    [self performSelector:@selector(lighten:) withObject:c1 afterDelay:.2f];
+    
+}
+-(void)lighten:(Creature*) c1
+{
+    ((CCSprite*)([[c1 children] objectAtIndex:0])).colorRGBA= [CCColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+}
 - (void)resetJump {
     if(abs(_mainCharacter.physicsBody.velocity.y)<.00001&&_jumpable)
         _jumped = FALSE;
@@ -802,7 +847,7 @@
 }
 
 //-(void)pause{
-//   NSLog(@"swag%f", _pauseScreen.position.y);
+//   //nslog(@"swag%f", _pauseScreen.position.y);
 //    _paused = !_paused;
 //    
 //    _pauseScreen.position = ccp(_pauseScreen.position.x,_pauseScreen.position.y+1.0);
@@ -822,7 +867,8 @@
         {
             if([c1.animationManager runningSequenceName]==nil)
             {
-                [c1.animationManager runAnimationsForSequenceNamed:@"WalkR"];
+                ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= true;
+                [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
             }
             
         }
@@ -830,6 +876,8 @@
         {
             if([c1.animationManager runningSequenceName]==nil)
             {
+                ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= false;
+
                       [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
             }
             
@@ -852,13 +900,17 @@
             [self moveEnemy:(c1)];
         }
         c1.attackDelay--;
-        //NSLog(@"updated enemy");
+        ////nslog(@"updated enemy");
     }
 
 }
 -(BOOL)updateCreatureAttackDirection:(Creature*) c1
 {
-    if([c1.ccbDirectory isEqualToString:@"Spider"])
+    if(c1.isBoss)
+    {
+        detectRange = 400.0;
+    }
+    else if([c1.ccbDirectory isEqualToString:@"Spider"])
     {
         detectRange=10.0;
     }
@@ -871,11 +923,13 @@
     if(c1.position.x>_mainCharacter.position.x&&abs(c1.position.x-_mainCharacter.position.x)<detectRange)
     {
         c1.right = -1;
+        ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= false;
         return true;
     }
     else if(c1.position.x<_mainCharacter.position.x&&abs(c1.position.x-_mainCharacter.position.x)<detectRange)
     {
         c1.right = 1;
+        ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= true;
         return true;
     }
     else
@@ -890,7 +944,7 @@
     if(!c1.atTargetXPoint&&abs(c1.targetXPoint-c1.position.x)<30.0)
     {
         
-        NSLog(@"char stops moving");
+        //nslog(@"char stops moving");
         //creature.position = ccp(creature.position.x+targetXPoint,creature.position.y);
         [c1.physicsBody setVelocity:CGPointMake(0, c1.physicsBody.velocity.y)];
 
@@ -924,6 +978,7 @@
 }
 -(void)moveEnemy:(Creature*) c1{
     float mspeed;
+
     if([c1.ccbDirectory isEqualToString:@"Spider"])
     {
         mspeed = 50.0;
@@ -937,20 +992,22 @@
         
         if(c1.position.x>=_mainCharacter.position.x)
         {
-        
-                [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
+            ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= false;
+
+            [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
           
-            NSLog(@"move left");
+            //nslog(@"move left");
             [c1.physicsBody setVelocity:CGPointMake(-mspeed, c1.physicsBody.velocity.y)];
             //c1.targetXPoint = c1.position.x-50;
             
         }
         else
         {
+            ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= true;
+
+            [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
         
-            [c1.animationManager runAnimationsForSequenceNamed:@"WalkR"];
-        
-            NSLog(@"move right");
+            //nslog(@"move right");
             [c1.physicsBody setVelocity:CGPointMake(mspeed, c1.physicsBody.velocity.y)];
             //c1.targetXPoint = c1.position.x+50;
         }
@@ -961,20 +1018,22 @@
     {
         if(c1.position.x>=_mainCharacter.position.x)
         {
-            
+            ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= false;
+
             [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
             
-            NSLog(@"move left");
+            //nslog(@"move left");
             [c1.physicsBody setVelocity:CGPointMake(-mspeed, c1.physicsBody.velocity.y)];
             //c1.targetXPoint = c1.position.x-50;
             
         }
         else
         {
+            ((CCSprite*)([[c1 children] objectAtIndex:0])).flipX= true;
+
+            [c1.animationManager runAnimationsForSequenceNamed:@"WalkL"];
             
-            [c1.animationManager runAnimationsForSequenceNamed:@"WalkR"];
-            
-            NSLog(@"move right");
+            //nslog(@"move right");
             [c1.physicsBody setVelocity:CGPointMake(mspeed, c1.physicsBody.velocity.y)];
             //c1.targetXPoint = c1.position.x+50;
         }
@@ -990,7 +1049,7 @@
 {
     [[_physicsNode space] addPostStepBlock:^{
         
-        NSLog(@"sup");
+        //nslog(@"sup");
         
         //spawn if there are currently no creatures under that spawnnode
         if(nodeB==_mainCharacter)
@@ -1015,7 +1074,7 @@
     if (!_gameOver&&nodeB==_mainCharacter) {
         if(data.gameProgress==5)
         {
-            [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey:@"didFinishTutorial"];
+            [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey: [NSString stringWithFormat: @"didFinishTutorial%@",dataType]];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
@@ -1025,8 +1084,18 @@
         [[CCDirector sharedDirector] replaceScene:gameplayScene];
   
         _gameOver = TRUE;
+        int k = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",@"GameProgess",dataType]];
         
-        [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey:data.levelname];
+        if(data.currentLevel==k)
+        {
+                   [[NSUserDefaults standardUserDefaults] setInteger:k+2 forKey:[NSString stringWithFormat: @"%@%@",@"GameProgess",dataType]];
+            
+               [[NSUserDefaults standardUserDefaults] synchronize];
+            
+        }
+
+        
+        [[NSUserDefaults standardUserDefaults] setObject:@"Done" forKey: [NSString stringWithFormat: @"%@%@",data.levelname,dataType]];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
     }
@@ -1055,7 +1124,7 @@
 {
     [[_physicsNode space] addPostStepBlock:^{
         
-        NSLog(@"sup");
+        //nslog(@"sup");
         
         //spawn if there are currently no creatures under that spawnnode
         
@@ -1070,7 +1139,7 @@
 {
     [[_physicsNode space] addPostStepBlock:^{
         
-        NSLog(@"sup");
+        //nslog(@"sup");
         
         //spawn if there are currently no creatures under that spawnnode
         
@@ -1085,7 +1154,7 @@
     
     [[_physicsNode space] addPostStepBlock:^{
 
-        NSLog(@"sup");
+        //nslog(@"sup");
 
         //spawn if there are currently no creatures under that spawnnode
         
@@ -1102,7 +1171,7 @@
     
     [[_physicsNode space] addPostStepBlock:^{
         
-        NSLog(@"sup");
+        //nslog(@"sup");
         
         //spawn if there are currently no creatures under that spawnnode
         
@@ -1111,7 +1180,9 @@
 
         if(data.gameProgress==0)
         {
+            
             data.currentTutorialProgress=2;
+            
             nodeB.isDead = true;
             nodeB.ccbDirectory = @"Spider";
             [nodeB.animationManager runAnimationsForSequenceNamed:(@"Die")];
@@ -1132,23 +1203,31 @@
     }key:nodeA];
     return true;
 }
+-(void)complete
+{
+    LevelUp* yeh = (LevelUp*)[CCBReader load:@"PopUp2" owner:self];
+    ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).fontSize = (10.0);
+    ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).string = [NSString stringWithFormat:@"Level Complete!"];
+    [self addChild:yeh];
+    
+    CCSprite* door = (CCSprite*)[CCBReader load:@"Gem"];
+    door.position = _gem.position;
+    [_physicsNode addChild:door];
+}
 -(void)getHit:(Creature*) nodeB
 {
+    [self redden:nodeB];
     if(nodeB.health<2)
     {
           _killedEnemyCount++;
-        if(_killedEnemyCount>=10)
+        if(_killedEnemyCount==10&&!_bossroom)
         {
-            LevelUp* yeh = [CCBReader load:@"PopUp2" owner:self];
-            ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).fontSize = (10.0);
-            ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).string = [NSString stringWithFormat:@"Level Complete!"];
-            [self addChild:yeh];
-            
-            CCSprite* door = [CCBReader load:@"Gem"];
-            door.position = _gem.position;
-            [_physicsNode addChild:door];
+            [self complete];
         }
-        
+        if(nodeB.isBoss)
+        {
+            [self performSelector:@selector(complete) withObject:nil afterDelay:2.0f];
+        }
 
         
         nodeB.isDead = true;
@@ -1185,6 +1264,8 @@
     {
         _gotHit = true;
     }
+    
+    
 }
 -(void)hurt
 {
@@ -1225,6 +1306,7 @@
         [_levelNode.children[0] addChild:healthPotion];
         
     }
+    
     //CCNode *coin = [CCBReader load:@"Coin"];
     //coin.physicsBody.sensor = true;
     //coin.position =nodeB.position;
@@ -1235,7 +1317,7 @@
     [[_physicsNode space] addPostStepBlock:^{
             nodeA.physicsBody.collisionGroup = nodeB.physicsBody.collisionGroup;
                [nodeA.physicsBody setVelocity:CGPointMake(-nodeA.physicsBody.velocity.x, -nodeA.physicsBody.velocity.y)];
-        
+        [nodeB.animationManager runAnimationsForSequenceNamed:@"Reflect"];
         
     }key:nodeA];
     return true;
@@ -1263,9 +1345,10 @@
       
         _currentWorkingAttack = [NSString stringWithString:nodeB.attack];
 
-        [self performSelector:@selector(spawnEnemyAtSpawnNode:) withObject:[NSNumber numberWithInt:nodeB.spawnNodeNum] afterDelay:15.0];
+       
         [self updateExpBars2];
          [nodeB removeFromParent];
+        [nodeA removeFromParent];
       
     } key:nodeA];
     return true;
@@ -1406,8 +1489,8 @@ _closeAttackActivated = false;
         LevelUp *levelup = (LevelUp*)[CCBReader loadAsScene:@"LevelUp"];
         [self addChild:levelup];
         [data.unlockedAttacks addObject:@"Bomb"];
-        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"Bomb"];
-                [[NSUserDefaults standardUserDefaults] setInteger:20 forKey:@"Spider"];
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey: [NSString stringWithFormat: @"Bomb%@",dataType]];
+                [[NSUserDefaults standardUserDefaults] setInteger:20 forKey: [NSString stringWithFormat: @"Spider%@",dataType]];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
            data.gameProgress = 4;
@@ -1417,9 +1500,10 @@ _closeAttackActivated = false;
 }
 -(void)updateExpBars2
 {
-    if([[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]<10)
+
+    if([[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",_mainCharacter.ccbDirectory,dataType]]<10)
     {
-        float a = [[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory];
+        float a = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",_mainCharacter.ccbDirectory,dataType]];
         
            _expBar.scaleX = a/10.0;
 
@@ -1453,7 +1537,9 @@ _closeAttackActivated = false;
         _mainCharacter.maxhealth = 20;
         _mainCharacter.physicsBody.collisionGroup = @"good";
         _mainCharacter.health = _mainCharacter.maxhealth;
-          _mainCharacter.right = -1;
+          _mainCharacter.right = 1;
+     
+        ((CCSprite*)([[_mainCharacter children] objectAtIndex:0])).flipX= true;
         _mainCharacter.position = _myChar.position;
         CCNode* aura =[CCBReader load:@"Aura"];
         aura.position = ccp(30,20);
@@ -1510,9 +1596,15 @@ _closeAttackActivated = false;
         enemy.health = 4.0;
         enemy.maxhealth =4.0;
     }
+    else if([enemy.ccbDirectory isEqualToString:@"Angel"])
+    {
+        enemy.health = 50.0;
+        enemy.maxhealth =50.0;
+        enemy.isBoss = true;
+    }
     
         enemy.position = [([_levelNode.children[0] children][p]) positionInPoints];
-    NSLog(@"%f",enemy.position.y);
+    //nslog(@"%f",enemy.position.y);
    
         enemy.spawnNodeNum = p;
 
@@ -1522,7 +1614,7 @@ _closeAttackActivated = false;
         // _mainCharacter.target = enemy;
     
         
-        NSLog(@"%d",_spawnNode.children.count);
+        //nslog(@"%d",_spawnNode.children.count);
     
 
 
@@ -1538,7 +1630,7 @@ _closeAttackActivated = false;
         spawned = true;
         //if(_spawnNode.children.count==0)
         // {
-        NSLog(@"spwaned");
+        //nslog(@"spwaned");
         int i = arc4random()%[creatures count];
         NSString *temp = creatures[i];
             Creature* enemy=(Creature *)[CCBReader load:temp];
@@ -1560,23 +1652,38 @@ _closeAttackActivated = false;
         
        // _mainCharacter.target = enemy;
         
-        NSLog(@"%d",_spawnNode.children.count);
+        //nslog(@"%d",_spawnNode.children.count);
         
         //}
     }
 
 }
-
+-(void)restoreBarrier:(Creature*) c1
+{
+    c1.usingBarrier = false;
+}
 - (void)update:(CCTime)delta
 {
-    _coinLabel.string = [NSString stringWithFormat:@"Kill %d Monsters", 10-_killedEnemyCount];
-    NSLog(_mainCharacter.ccbDirectory);
-        NSLog(@"my exp is %d", [[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]);
+    if(!_bossroom&&_killedEnemyCount<10)
+    {
+            _coinLabel.string = [NSString stringWithFormat:@"Defeat %d Monsters", 10-_killedEnemyCount];
+    }
+    else if(_bossroom)
+    {
+            _coinLabel.string = [NSString stringWithFormat:@"Defeat The Boss"];
+    }
+    else
+    {
+        _coinLabel.string = [NSString stringWithFormat:@"Walk To Door"];
+    }
+    
+    //nslog(_mainCharacter.ccbDirectory);
+        //nslog(@"my exp is %d", [[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]);
     if(!_physicsNode.paused)
     {
 //        if(_paused)
 //        {
-//            NSLog(@"called");
+//            //nslog(@"called");
 //                 _paused=false;
 //            _physicsNode.paused = false;
 //        }
@@ -1621,12 +1728,15 @@ _closeAttackActivated = false;
         [self checkForContactWithCloseAttack];
  
         _timeSinceGameStart+=delta;
-        NSLog(@"%f",_timeSinceGameStart);
+        //nslog(@"%f",_timeSinceGameStart);
         
-        if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
-        {
+
+            if([[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"didFinishTutorial%@",dataType]]!=nil&&!_bossroom)
+            {
                 [self spawn];
-        }
+            }
+        
+
     
        
     }
@@ -1637,7 +1747,9 @@ _closeAttackActivated = false;
     {
         if([_mainCharacter.animationManager runningSequenceName]==nil)
         {
-            [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkR"];
+            ((CCSprite*)([[_mainCharacter children] objectAtIndex:0])).flipX= true;
+
+            [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkL"];
         }
         
     }
@@ -1645,6 +1757,7 @@ _closeAttackActivated = false;
     {
         if([_mainCharacter.animationManager runningSequenceName]==nil)
         {
+            ((CCSprite*)([[_mainCharacter children] objectAtIndex:0])).flipX= false;
             [_mainCharacter.animationManager runAnimationsForSequenceNamed:@"WalkL"];
         }
         
@@ -1654,7 +1767,7 @@ _closeAttackActivated = false;
 }
 -(void)spawn
 {
-    if(_timeSinceGameStart>4.0)
+    if(_timeSinceGameStart>4.0||_bossroom)
     {
         _timeSinceGameStart=0.0;
         [self spawnEnemyAtSpawnNode:[NSNumber numberWithInt:(arc4random()%3)+1]];
@@ -1716,7 +1829,6 @@ _closeAttackActivated = false;
         bomb.physicsBody.collisionGroup = c1.physicsBody.collisionGroup;
         
       
-        
         bomb.physicsBody.sensor = true;
         bomb.position = c1.position;
         
@@ -1736,8 +1848,9 @@ _closeAttackActivated = false;
                 alreadyDone = true;
             }
         }
-        if(!alreadyDone)
+        if(!alreadyDone&&!c1.usingBarrier)
         {
+            c1.usingBarrier = true;
             CCNode *a1 = [CCBReader load:str];
      
             a1.physicsBody.collisionGroup = c1.physicsBody.collisionGroup;
@@ -1752,7 +1865,14 @@ _closeAttackActivated = false;
             //[_setOfAttacks addObject:a1];
             [self followParent:a1];
             
-            [self performSelector:@selector(eraseAttack:) withObject:a1 afterDelay:2.0];
+            if(c1==_mainCharacter)
+            {
+                [self performSelector:@selector(restoreBarrier:) withObject:c1 afterDelay:2.0];
+                
+                [self performSelector:@selector(eraseAttack:) withObject:a1 afterDelay:2.0];
+                
+            }
+       
         }
 
         
@@ -1806,6 +1926,58 @@ _closeAttackActivated = false;
         
         
     }
+    else if ([str isEqualToString:@"Summon"])
+    {
+        
+        
+        NSArray* crit = [NSArray arrayWithObjects:@"Spider",@"Goblin",@"Golemn",@"Mage", nil];
+        
+        NSArray* att =[NSArray arrayWithObjects:@"Bomb",@"NinjaStar",@"RockSlide",@"Barrier", nil];
+
+        int i = arc4random()%[crit count];
+        
+        NSString *temp = crit[i];
+        Creature* enemy =  (Creature *)[CCBReader load:temp];
+        enemy.attack = att[i];
+        enemy.ccbDirectory = temp;
+        enemy.target = _mainCharacter;
+        enemy.physicsBody.sensor = true;
+        enemy.physicsBody.affectedByGravity = false;
+        enemy.physicsBody.collisionGroup = @"bad";
+        if([enemy.ccbDirectory isEqualToString:@"Spider"])
+        {
+            enemy.health = 1.0;
+            enemy.maxhealth =1.0;
+        }
+        else if([enemy.ccbDirectory isEqualToString:@"Goblin"])
+        {
+            enemy.health = 2.0;
+            enemy.maxhealth =2.0;
+        }
+        else if([enemy.ccbDirectory isEqualToString:@"Mage"])
+        {
+            enemy.health = 3.0;
+            enemy.maxhealth =3.0;
+        }
+        else if([enemy.ccbDirectory isEqualToString:@"Golemn"])
+        {
+            enemy.health = 4.0;
+            enemy.maxhealth =4.0;
+        }
+        
+        enemy.position = c1.position;
+        //nslog(@"%f",enemy.position.y);
+        
+        
+        [_levelNode.children[0] addChild:enemy];
+        [_aliveSetOfCreatures addObject:enemy];
+        
+        // _mainCharacter.target = enemy;
+        
+        
+        //nslog(@"%d",_spawnNode.children.count);
+
+    }
     else if ([str isEqualToString:@"Punch"])
     {
         CCNode *a1 = [CCBReader load:str];
@@ -1846,7 +2018,9 @@ _closeAttackActivated = false;
 {
     if(bomb!=nil)
     {
+        bomb.physicsBody.velocity = ccp(0,10);
         bomb.physicsBody.collisionType = @"HarmBomb";
+        
         [self performSelector:@selector(erasemyAttack:) withObject:bomb afterDelay:.5];
     }
 
@@ -1906,7 +2080,7 @@ _closeAttackActivated = false;
     if(![data.unlockedAttacks containsObject:str])
     {
         [data.unlockedAttacks addObject:str];
-        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:str];
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey: [NSString stringWithFormat: @"%@%@",str,dataType]];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
@@ -1915,41 +2089,41 @@ _closeAttackActivated = false;
     if(![_mainCharacter.ccbDirectory isEqualToString:@"Ghost"])
     {
        
-        [[NSUserDefaults standardUserDefaults] setInteger: [[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]+1 forKey: _mainCharacter.ccbDirectory];
+        [[NSUserDefaults standardUserDefaults] setInteger: [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",_mainCharacter.ccbDirectory,dataType]]+1 forKey: [NSString stringWithFormat: @"%@%@",_mainCharacter.ccbDirectory,dataType]];
         [[NSUserDefaults standardUserDefaults]synchronize];
     }
     
-    NSLog(@"my exp is %d", [[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]);
+    //nslog(@"my exp is %d", [[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]);
 }
 -(void)checkForCharacter:(Creature*) crit
 {
-    if( [[NSUserDefaults standardUserDefaults] objectForKey:crit.ccbDirectory]==nil)
+    if( [[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"%@%@",crit.ccbDirectory,dataType]]==nil)
     {
-        [[NSUserDefaults standardUserDefaults] setObject:0 forKey:crit.ccbDirectory];
+        [[NSUserDefaults standardUserDefaults] setObject:0 forKey:[NSString stringWithFormat: @"%@%@",crit.ccbDirectory,dataType]];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
-    _currentCreatureExp = [[NSUserDefaults standardUserDefaults] integerForKey:crit.ccbDirectory];
+    _currentCreatureExp = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",crit.ccbDirectory,dataType]];
 
 }
 
 -(void)learnNewSkill
 {
-    NSLog(@"%d",_currentCreatureExp);
-    if([[NSUserDefaults standardUserDefaults] integerForKey:_mainCharacter.ccbDirectory]==10)
+    //nslog(@"%d",_currentCreatureExp);
+    if([[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",_mainCharacter.ccbDirectory,dataType]]==10)
     {
-        NSLog(@"yea");
+        //nslog(@"yea");
         if(![data.unlockedAttacks containsObject:_currentWorkingAttack])
         {
             [data.unlockedAttacks addObject:_currentWorkingAttack];
-            [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:_currentWorkingAttack];
+            [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:[NSString stringWithFormat: @"%@%@",_currentWorkingAttack,dataType]];
             [[NSUserDefaults standardUserDefaults] synchronize];
              
-            LevelUp* yeh2 = [CCBReader load:@"PopUp2" owner:self];
+            LevelUp* yeh2 = (LevelUp*)[CCBReader load:@"PopUp2" owner:self];
             ((CCLabelTTF*)[[yeh2.children[0] children] objectAtIndex:0]).fontSize = (10.0);
             ((CCLabelTTF*)[[yeh2.children[0] children] objectAtIndex:0]).string = [NSString stringWithFormat:@"New Attack: %@", _currentWorkingAttack];
             [self addChild:yeh2];
             
-            LevelUp* yeh = [CCBReader load:@"PopUp2" owner:self];
+            LevelUp* yeh = (LevelUp*)[CCBReader load:@"PopUp2" owner:self];
             ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).fontSize = (10.0);
             ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).string = [NSString stringWithFormat:@"%@ Mastery!", _mainCharacter.ccbDirectory];
             [self addChild:yeh];

@@ -16,16 +16,30 @@
 {
     CCNode* _configbutton;
     GameData* data;
+    NSString* dataType;
+    CCNode* _resume;
 }
 - (void)onEnter
 {
+      data= [GameData sharedData];
+    
+    dataType = data.dataType;
+    data.cursorPosition = ccp(_resume.positionInPoints.x+_resume.contentSizeInPoints.width/(2.0f), _resume.positionInPoints.y);
+    
+    CGPoint k = _resume.positionInPoints;
     
     [super onEnter];
-  data= [GameData sharedData];
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    // play background sound
+    audio.bgVolume = .2;
+    
+
+
         self.userInteractionEnabled = YES;
     [self cursorStart];
     [self addTutorial];
 }
+
 -(void)addTutorial
 {
     Tutorial* myTutorial = (Tutorial*)[CCBReader load:@"TutorialBackground"];
@@ -35,13 +49,15 @@
 -(void)Resume
 {
     [self removeFromParent];
+    OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
+    audio.bgVolume = 1.0;
     [self physNode].paused = false;
 }
 -(void)Return
 {
-    if(data.gameProgress>3||[[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+    if(data.gameProgress>3||[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",@"didFinishTutorial",dataType]]!=nil)
     {
-        CCScene *gameplayScene = [CCBReader loadAsScene:@"LocationSelect"];
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"Location"];
         [[CCDirector sharedDirector] replaceScene:gameplayScene];
     }
 
@@ -49,7 +65,7 @@
 
 -(void)ConfigureMoves
 {
-    if(data.gameProgress!=0||[[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+    if(data.gameProgress!=0||[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",@"didFinishTutorial",dataType]]!=nil)
     {
          data.currentTutorialProgress = 0;
         SwipeSet *mySwipeSet = (SwipeSet*)[CCBReader load:@"SwipeSet"];

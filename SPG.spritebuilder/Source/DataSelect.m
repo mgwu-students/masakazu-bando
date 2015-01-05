@@ -25,6 +25,13 @@ GameData* data;
     CCNode* _thing3;
     
     CCLabelTTF* _label;
+    CCLabelTTF* _label2;
+    CCLabelTTF* _label3;
+    OALSimpleAudio* audio;
+    NSString* dataType;
+    
+    
+
 
 }
 
@@ -45,18 +52,19 @@ GameData* data;
 //    }
 //}
 - (void)LoadData1 {
-   
 
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+
+    if([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",@"didFinishTutorial",dataType]]!=nil)
     {
       
         [self setUp];
         
-        CCScene *gameplayScene = [CCBReader loadAsScene:@"LocationSelect"];
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"Location"];
         [[CCDirector sharedDirector] replaceScene:gameplayScene];
     }
     else
     {
+        
         [self reset];
           [self setUp];
         
@@ -82,12 +90,13 @@ GameData* data;
     for(int i = 0;i<allMyAttacks.count;i++)
     {
         
-        if( [[NSUserDefaults standardUserDefaults] objectForKey: [allMyAttacks objectAtIndex:i]]!=nil)
+        if( [[NSUserDefaults standardUserDefaults] objectForKey: [NSString stringWithFormat: @"%@%@",[allMyAttacks objectAtIndex:i],dataType] ]!=nil)
+   
         {
              [data.unlockedAttacks addObject:[allMyAttacks objectAtIndex:i]];
-            if(![((NSString*)[[NSUserDefaults standardUserDefaults] objectForKey: [allMyAttacks objectAtIndex:i]]) isEqualToString:@"" ])
+            if(![((NSString*)[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",[allMyAttacks objectAtIndex:i],dataType]]) isEqualToString:@"" ])
             {
-                            [self saveAttack:[allMyAttacks objectAtIndex:i] withPattern:[[NSUserDefaults standardUserDefaults] objectForKey: [allMyAttacks objectAtIndex:i]]];
+                            [self saveAttack:[allMyAttacks objectAtIndex:i] withPattern:[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",[allMyAttacks objectAtIndex:i],dataType]]];
             }
 
              
@@ -102,22 +111,28 @@ GameData* data;
 }
 -(void)resetGame
 {
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"didFinishTutorial"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",@"didFinishTutorial",dataType]];
+    
      [[NSUserDefaults standardUserDefaults] synchronize];
     [self LoadData1];
 }
 -(void)reset
 {
     
-    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"Coins"];
-    [[NSUserDefaults standardUserDefaults] setObject:@"Ghost" forKey:@"CreatureType"];
-    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"CurrentProgressAttack"];
-    [[NSUserDefaults standardUserDefaults] setObject:@"rr" forKey:@"Punch"];
-    [[NSUserDefaults standardUserDefaults] setObject:@"dd" forKey:@"BodySwap"];
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"NinjaStar"];
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Bomb"];
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"RockSlide"];
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"Barrier"];
+    [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:[NSString stringWithFormat: @"%@%@",@"GameProgess",dataType]];
+    
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:[NSString stringWithFormat: @"%@%@",@"Coins",dataType]];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:@"Ghost" forKey:[NSString stringWithFormat: @"%@%@",@"CreatureType",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:[NSString stringWithFormat: @"%@%@",@"CurrentProgressAttack",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:@"rr" forKey:[NSString stringWithFormat: @"%@%@",@"Punch",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:@"dd" forKey:[NSString stringWithFormat: @"%@%@",@"BodySwap",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",@"NinjaStar",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",@"Bomb",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",@"RockSlide",dataType]];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",@"Barrier",dataType]];
     
     
     
@@ -128,12 +143,14 @@ GameData* data;
     NSArray* allCreatures = [NSArray arrayWithObjects:@"Spider",@"Wolf",@"Golemn",@"Mage",@"Goblin", nil];
     for(int i = 0;i< allCreatures.count;i++)
     {
-        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[allCreatures objectAtIndex:i] ];
+        [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:[NSString stringWithFormat: @"%@%@",[allCreatures objectAtIndex:i],dataType] ];
+   
+    
     }
     
     for(int i = 0;i< allLocations.count;i++)
     {
-         [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[allLocations objectAtIndex:i] ];
+         [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",[allLocations objectAtIndex:i],dataType] ];
     }
     
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -155,18 +172,7 @@ GameData* data;
     
     
 }
--(void)default
-{
-   
-   
 
-   
-
-    
-     
-    
-
-   }
 
 -(void)saveAttack:(NSString*)attk withPattern:(NSString*) str
 {
@@ -229,11 +235,17 @@ GameData* data;
     
 
     [super onEnter];
+    
+    data= [GameData sharedData];
 
+    
+    audio = [OALSimpleAudio sharedInstance];
+    
+    
+    [audio preloadEffect:@"click.mp3"];
     // accept touches on the grid
     self.userInteractionEnabled = YES;
 
-      data= [GameData sharedData];
     
 
     
@@ -246,21 +258,24 @@ GameData* data;
         
         _play1.opacity = .5;
     }
-    else if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
-    {
-        _play2.opacity = .5;
-    }
-    else if (CGRectContainsPoint([_play3 boundingBox], positionInScene))
-    {
-        _play3.opacity = .5;
-    }
     else if (CGRectContainsPoint([_erase1 boundingBox], positionInScene))
     {
         _erase1.opacity = .5;
     }
+    positionInScene = [touches locationInNode:_thing2];
+
+    if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
+    {
+        _play2.opacity = .5;
+    }
     else if (CGRectContainsPoint([_erase2 boundingBox], positionInScene))
     {
         _erase2.opacity = .5;
+    }
+        positionInScene = [touches locationInNode:_thing3];
+    if (CGRectContainsPoint([_play3 boundingBox], positionInScene))
+    {
+        _play3.opacity = .5;
     }
     else if (CGRectContainsPoint([_erase3 boundingBox], positionInScene))
     {
@@ -276,33 +291,68 @@ GameData* data;
 
     if (CGRectContainsPoint([_play1 boundingBox], positionInScene))
     {
-        
+               [audio playEffect:@"click.mp3"];
+        data.dataType = @"";
+            dataType = data.dataType;
         [self LoadData1];
     }
-    if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
-    {
-
-    }
-    if (CGRectContainsPoint([_play3 boundingBox], positionInScene))
-    {
-
-    }
-    
     if (CGRectContainsPoint([_erase1 boundingBox], positionInScene))
     {
+         data.dataType = @"";
+         dataType = data.dataType;
+        [audio playEffect:@"click.mp3"];
         if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
         {
-        PopUp3* kkk = (PopUp3*)[CCBReader load:@"PopUp3"];
-        [self addChild:kkk];
+            PopUp3* kkk = (PopUp3*)[CCBReader load:@"PopUp3"];
+            [self addChild:kkk];
         }
+    }
+    
+    positionInScene = [touches locationInNode:_thing2];
+
+    
+    if (CGRectContainsPoint([_play2 boundingBox], positionInScene))
+    {
+        [audio playEffect:@"click.mp3"];
+        data.dataType = @"2";
+        dataType = data.dataType;
+        [self LoadData1];
     }
     if (CGRectContainsPoint([_erase2 boundingBox], positionInScene))
     {
-        
+        data.dataType = @"2";
+        dataType = data.dataType;
+        [audio playEffect:@"click.mp3"];
+        if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial2"]!=nil)
+        {
+            PopUp3* kkk = (PopUp3*)[CCBReader load:@"PopUp3"];
+            [self addChild:kkk];
+        }
     }
+    
+    positionInScene = [touches locationInNode:_thing3];
+
+    
+    if (CGRectContainsPoint([_play3 boundingBox], positionInScene))
+    {
+        [audio playEffect:@"click.mp3"];
+        data.dataType = @"3";
+        dataType = data.dataType;
+        [self LoadData1];
+    }
+    
+
+
     if (CGRectContainsPoint([_erase3 boundingBox], positionInScene))
     {
-       
+        data.dataType = @"3";
+        dataType = data.dataType;
+        [audio playEffect:@"click.mp3"];
+        if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial3"]!=nil)
+        {
+            PopUp3* kkk = (PopUp3*)[CCBReader load:@"PopUp3"];
+            [self addChild:kkk];
+        }
     }
 
     _play1.opacity = 0;
@@ -315,7 +365,7 @@ GameData* data;
 }
 -(void)update:(CCTime)delta
 {
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]!=nil)
+    if([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"didFinishTutorial"]]!=nil)
     {
         _label.string = @"Continue Game";
     }
@@ -323,6 +373,24 @@ GameData* data;
     {
         _label.string = @"New Game";
 
+    }
+    if([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"didFinishTutorial2"]]!=nil)
+    {
+        _label2.string = @"Continue Game";
+    }
+    else
+    {
+        _label2.string = @"New Game";
+        
+    }
+    if([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"didFinishTutorial3"]]!=nil)
+    {
+        _label3.string = @"Continue Game";
+    }
+    else
+    {
+        _label3.string = @"New Game";
+        
     }
 }
 

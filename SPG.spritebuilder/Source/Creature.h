@@ -27,5 +27,6 @@
 @property (nonatomic,strong) NSString* attack;
 @property (nonatomic,weak) Creature* target;
 @property (nonatomic,strong) NSString* workingAttack;
-
+@property (nonatomic,assign) BOOL usingBarrier;
+@property (nonatomic, assign) BOOL isBoss;
 @end

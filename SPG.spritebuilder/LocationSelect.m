@@ -9,6 +9,7 @@
 #import "LocationSelect.h"
 #import "MainScene.h"
 #import "GameData.h"
+#import "LevelUp.h"
 
 @implementation LocationSelect{
     CCSprite* _bossShade;
@@ -21,102 +22,95 @@
     CCSprite* _golemn;
     CCSprite* _goblin;
     GameData* data;
-    BOOL* offscreen;
+    BOOL offscreen;
+    NSString* dataType;
+    CCNode* _map;
+    int _gameProgress;
 }
 -(void)onEnter{
+            data= [GameData sharedData];
+    dataType = data.dataType;
     [super onEnter];
         self.userInteractionEnabled = YES;
 
-    NSArray* allLocations = [NSArray arrayWithObjects:@"LocationForest", @"LocationSky", @"LocationSea", @"LocationFactory", @"LocationMountain", nil];
+
+
     
-    for(int i = 0;i< allLocations.count;i++)
+    _gameProgress = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat: @"%@%@",@"GameProgess",dataType]];
+    
+    for(int i = 1 ;i>=_gameProgress/9;i--)
     {
-        if([[NSUserDefaults standardUserDefaults] objectForKey:[allLocations objectAtIndex:i]]==nil)
+        if(_gameProgress>(i*9))
         {
-            [self.children[1] removeFromParent];
+            for(int j = 8;j>=_gameProgress%9;j--)
+            {
+                [[[_map.children[i] children] objectAtIndex:j] removeFromParent];
+            }
         }
+        else
+        {
+            for(int j = 8;j>=0;j--)
+            {
+                [[[_map.children[i] children] objectAtIndex:j] removeFromParent];
+            }
+        }
+
     }
 }
 #pragma mark-
 -(void)touchBegan:(UITouch *)touches withEvent:(UIEvent *)event {
-    CGPoint positionInScene = [touches locationInNode:self];
-    if (CGRectContainsPoint([_goblin boundingBox], positionInScene))
-    {
-        _goblinShade.opacity = .6;
-    }
-    else if (CGRectContainsPoint([_golemn boundingBox], positionInScene))
-    {
-        _golemnShade.opacity = .6;
-    }
-    else if (CGRectContainsPoint([_mage boundingBox], positionInScene))
-    {
-        _mageShade.opacity = .6;
-    }
-    else if (CGRectContainsPoint([_boss boundingBox], positionInScene))
-    {
-        _bossShade.opacity = .6;
-    }
+
 
 }
-- (void)touchMoved:(UITouch *)touches withEvent:(UIEvent *)event {
-    
+-(void)Sorry
+{
+    LevelUp* yeh = (LevelUp*)[CCBReader load:@"PopUp2" owner:self];
+    ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).fontSize = (10.0);
+    ((CCLabelTTF*)[[yeh.children[0] children] objectAtIndex:0]).string = [NSString stringWithFormat:@"More Levels Coming Soon!"];
+    [self addChild:yeh];
 }
-
-- (void)touchEnded:(UITouch *)touches withEvent:(UIEvent *)event {
-    CGPoint positionInScene = [touches locationInNode:self];
-    
-    if (CGRectContainsPoint([_goblin boundingBox], positionInScene))
-    {
-        [self Forest];
-    }
-    else if (CGRectContainsPoint([_golemn boundingBox], positionInScene))
-    {
-        [self Mountain];
-    }
-    else if (CGRectContainsPoint([_mage boundingBox], positionInScene))
-    {
-        [self Sea];
-    }
-    else if (CGRectContainsPoint([_boss boundingBox], positionInScene))
-    {
-        [self Sky];
-    }
-    
-    _goblinShade.opacity = 0;
-
-    _golemnShade.opacity = 0;
-
-    _mageShade.opacity = 0;
-
-    _bossShade.opacity = 0;
-    
-}
-- (void)Forest {
+- (void)Level1 {
     if(!offscreen)
     {
+        data.currentLevel = 1;
+        offscreen = true;
+        NSString* temp = @"LocationForest";
+        [self loadScene:temp];
+    }
+    
+}
+
+- (void)Level2 {
+    if(!offscreen)
+    {
+        data.currentLevel = 3;
         offscreen = true;
         NSString* temp = @"LocationForest";
           [self loadScene:temp];
     }
   
 }
-- (void)Mountain {
+
+- (void)Level3 {
     if(!offscreen)
     {
+        data.currentLevel = 5;
+        offscreen = true;
+        [self loadScene:@"LocationSea"];}
+}
+- (void)Level4 {
+    if(!offscreen)
+    {
+        data.currentLevel = 7;
         offscreen = true;
         [self loadScene:@"LocationMountain"];}
 }
-- (void)Sea {
+- (void)Level5 {
     if(!offscreen)
     {
+        data.currentLevel = 9;
         offscreen = true;
-        [self loadScene:@"LocationSea"];}
-}
-- (void)Sky {
-    if(!offscreen)
-    {
-        offscreen = true;
-        [self loadScene:@"LocationSea"];}
+        [self loadScene:@"LocationFactory"];}
 }
 
 - (void)Factory {
@@ -135,7 +129,7 @@
 
 -(void)loadScene:(NSString*) scene
 {
-        data= [GameData sharedData];
+
      data.levelname = scene;
    
     MainScene *mainScene = (MainScene*)[CCBReader loadAsScene:@"MainScene"];

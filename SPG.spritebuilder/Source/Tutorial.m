@@ -27,9 +27,13 @@
     GameData *data;
     CCPhysicsNode* _physicsNode;
     CCLabelTTF* _mylab;
+    NSString* dataType;
 }
 -(void)didLoadFromCCB
 {
+            data= [GameData sharedData];
+    
+    dataType = data.dataType;
     //enable physics
     _physicsNode.collisionDelegate = self;
     _cursor.physicsBody.sensor = YES;
@@ -37,13 +41,13 @@
 - (void)onEnter {
     [super onEnter];
     
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"didFinishTutorial"]==nil)
+    if([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat: @"%@%@",@"didFinishTutorial",dataType]]==nil)
     {
         
         // accept touches on the grid
         //self.userInteractionEnabled = YES;
         initialPlayerPosition = self.me.position.x;
-        data= [GameData sharedData];
+
         _cursor.rotation = (90.0);
         if(data.gameProgress ==0)
         {
@@ -97,13 +101,14 @@ if([self.parent isKindOfClass:[PauseMenu class]])
 {
     if(data.gameProgress==4)
     {_cursor.rotation = (90.0);
-        _cursor.position = ccp(300.0f,110.0f);
+        _cursor.position = ccp(self.contentSizeInPoints.width/2,110.0*(self.contentSizeInPoints.height/(320.0f)));
         [ _cursor.physicsBody setVelocity:ccp(0,10)];
         [self performSelector:@selector(teachNewAttack) withObject:nil afterDelay:.5f];
     }
     else
-    {_cursor.rotation = (90.0);
-        _cursor.position = ccp(60,240);
+    {
+        _cursor.rotation = (90.0);
+        _cursor.position = data.cursorPosition;
         [ _cursor.physicsBody setVelocity:ccp(0,10)];
         [self performSelector:@selector(teachNewAttack) withObject:nil afterDelay:.5f];
     }
@@ -116,7 +121,7 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
         _mylab.color = [CCColor blackColor];
           _mylab.string = @"Select New Attack";
         _cursor.rotation = (90.0);
-        _cursor.position = ccp(490.0, 140.0);
+        _cursor.position = ccp(490.0f, 140.0f);
         [ _cursor.physicsBody setVelocity:ccp(0,10)];
         [self performSelector:@selector(teachNewAttack) withObject:nil afterDelay:.5f];
     }
@@ -217,23 +222,6 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
                 [self swipe2];
             }
 
-        }
-        else if([self.parent isKindOfClass:[PauseMenu class]])
-        {
-            if(data.gameProgress!=2)
-            {
-                _cursor.rotation = (90.0);
-                _cursor.position = ccp(300.0f,110.0f);
-                [ _cursor.physicsBody setVelocity:ccp(0,10)];
-                [self performSelector:@selector(tutorialAttack) withObject:nil afterDelay:.5f];
-            }
-            else
-            {
-                _cursor.rotation = (90.0);
-                _cursor.position = ccp(60,240);
-                [ _cursor.physicsBody setVelocity:ccp(0,10)];
-                [self performSelector:@selector(tutorialAttack) withObject:nil afterDelay:.5f];
-            }
         }
         else if([self.parent isKindOfClass:[SwipeSet class]])
         {
@@ -389,7 +377,7 @@ else if([self.parent isKindOfClass:[SwipeSet class]])
 }
 -(void)swipeattack
 {
-    if(data.currentTutorialProgress<2)
+    if(data.currentTutorialProgress==1)
     {
         //_cursor.rotation = (180.0);
         _cursor.visible = false;

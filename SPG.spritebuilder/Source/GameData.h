@@ -20,6 +20,10 @@
 @property(nonatomic) int gameProgress;
 @property(nonatomic) int currentTutorialProgress;
 @property(nonatomic) NSString* data;
+@property(nonatomic) NSString* dataType;
+@property(nonatomic) int currentLevel;
+@property(nonatomic) CGPoint cursorPosition;
 +(GameData*) sharedData;
+
 
 @end

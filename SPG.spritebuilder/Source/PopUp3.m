@@ -7,11 +7,15 @@
 //
 
 #import "PopUp3.h"
-
+#import "GameData.h"
 @implementation PopUp3
+{
+    GameData* data;
+}
 -(void)Yes
 {
-    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"didFinishTutorial"];
+    data = [GameData sharedData];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:[NSString stringWithFormat: @"%@%@",@"didFinishTutorial",data.dataType]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self removeFromParent];
 }

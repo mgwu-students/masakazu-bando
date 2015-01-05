@@ -16,12 +16,18 @@
     GameData* data;
     MyScrollView* _me;
 }
+-(void)shift
+{
+    self.front.position = ccp(self.front.position.x+1.0f,self.front.position.y);
+
+}
 -(void)NinjaStar
 {
     
     self.myAttack = @"NinjaStar";
     
-    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
+    [self shift];
+ 
     
 }
 -(void)Punch
@@ -29,8 +35,7 @@
     
     self.myAttack = @"Punch";
     
-    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
-    
+    [self shift];
 }
 -(void)BodySwap
 {
@@ -40,7 +45,7 @@
         data.currentTutorialProgress = 1;
     }
     
-    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
+    [self shift];
 }
 -(void)Bomb
 {
@@ -50,21 +55,21 @@
         data.gameProgress=5;
     }
     
-    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
+    [self shift];
 }
 -(void)Barrier
 {
     
     self.myAttack = @"Barrier";
     
-    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
+    [self shift];
 }
 -(void)RockSlide
 {
     
     self.myAttack = @"RockSlide";
     
-    self.front.position = ccp(self.front.position.x,self.front.position.y+1.0f);
+  [self shift];
 }
 - (void)onEnter
 {

@@ -7,6 +7,7 @@
 //
 
 #import "GameOver.h"
+#import "MainScene.h"
 
 @implementation GameOver
 {
@@ -15,9 +16,20 @@
 - (void)Restart {
     if(!offscreen)
     {
-        CCScene *gameplayScene = [CCBReader loadAsScene:@"Intro"];
+        CCScene *gameplayScene = [CCBReader loadAsScene:@"LocationSelect"];
         [[CCDirector sharedDirector] replaceScene:gameplayScene];
 
     }
+}
+-(void)Retrylevel
+{
+    
+    if(!offscreen)
+    {
+       MainScene *mainScene = (MainScene*)[CCBReader loadAsScene:@"MainScene"];
+        [[CCDirector sharedDirector] replaceScene:mainScene];
+        
+    }
+
 }
 @end

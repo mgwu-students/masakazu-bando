@@ -20,16 +20,14 @@
 	<integer>0</integer>
 	<key>engine</key>
 	<integer>0</integer>
+	<key>excludedFromPackageMigration</key>
+	<false/>
 	<key>exporter</key>
 	<string>ccbi</string>
 	<key>fileType</key>
 	<string>CocosBuilderProject</string>
 	<key>fileVersion</key>
 	<integer>1</integer>
-	<key>flattenPaths</key>
-	<false/>
-	<key>needRepublish</key>
-	<false/>
 	<key>onlyPublishCCBs</key>
 	<false/>
 	<key>publishAudioQuality_android</key>
@@ -140,10 +138,140 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
+		<key>Arclight Sprites/arclightDamage1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath12.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath28.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath43.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath48.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath49.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath51.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightDeath6.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle16.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle24.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle32.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle40.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle48.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle56.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Arclight Sprites/arclightIdle8.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Bomb/bomb explosion-1@4x.png</key>
 		<dict/>
 		<key>Bomb/bomb explosion-2@4x.png</key>
 		<dict/>
+		<key>ButtonBack.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>ButtonBoss.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>ButtonC.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>ButtonF.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>ButtonM.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>FHealthBarBack.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>ForestButton1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>Gesture_Swipe_Bottom@4x.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Gesture_Swipe_Right@4x.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Goblin/goblin_0 [www.imagesplitter.net]-1-0.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -315,6 +443,11 @@
 		<dict/>
 		<key>Mage SPG/walk right-9@4x.png</key>
 		<dict/>
+		<key>OrbsAndPlats/orb1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Platformer-Pixel163@4x.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -504,6 +637,46 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-1-0.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-1-1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-1-2.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-1-3.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-2-0.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-2-1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-2-2.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>bahamut [www.imagesplitter.net]/bahamut [www.imagesplitter.net]-2-3.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
@@ -651,6 +824,11 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
+		<key>dataSelect.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
 		<key>element_blue_rectangle@4x.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -663,8 +841,6 @@
 		</dict>
 		<key>fist.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
@@ -724,6 +900,36 @@
 			<integer>1</integer>
 		</dict>
 		<key>green trees_0 [www.imagesplitter.net].png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>layer1.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>layer2.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>layer3.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>lll [www.imagesplitter.net] (2).png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>lll [www.imagesplitter.net] (3).png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>1</integer>
+		</dict>
+		<key>objects/ninjastar.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>1</integer>
@@ -825,8 +1031,8 @@
 		</dict>
 	</dict>
 	<key>versionStr</key>
-	<string>Version: 1.1.0
-GitHub: d058712eaf
+	<string>Version: 1.2.1
+GitHub: dde98b0763
 </string>
 </dict>
 </plist>

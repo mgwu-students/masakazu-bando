@@ -246,7 +246,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/1385417117717.png</string>
+							<string>panel.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -296,8 +296,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>25</real>
-							<real>40</real>
+							<real>10</real>
+							<real>10</real>
 							<integer>1</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -311,7 +311,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.5</real>
+							<real>1</real>
 						</array>
 					</dict>
 					<dict>
@@ -345,8 +345,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>40</real>
-							<real>25</real>
+							<real>50</real>
+							<real>50</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -379,7 +379,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Back</string>
+							<string></string>
 							<false/>
 						</array>
 					</dict>
@@ -391,7 +391,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Buttonunhighlighted [www.imagesplitter.net].png</string>
+							<string>cancel.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -402,7 +402,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ButtonhighlightedButton [www.imagesplitter.net].png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -426,7 +426,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -445,7 +445,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -471,7 +471,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>30</real>
+							<real>40</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -498,7 +498,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>10</real>
+							<real>0.0</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1250,9 +1250,9 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>-0.5</real>
-									<integer>1</integer>
+									<real>3.3329999446868896</real>
+									<real>0.5</real>
+									<integer>2</integer>
 									<integer>2</integer>
 									<integer>2</integer>
 								</array>
@@ -1277,7 +1277,7 @@
 								<string>Point</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
+									<real>1</real>
 									<real>0.5</real>
 								</array>
 							</dict>
@@ -2221,8 +2221,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.30000001192092896</real>
-							<real>-0.5</real>
+							<real>-1</real>
+							<real>0.5</real>
 							<integer>3</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -2248,7 +2248,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
+							<real>1</real>
 							<real>0.5</real>
 						</array>
 					</dict>
